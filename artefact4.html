@@ -1,19 +1,63 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Generic - Forty by HTML5 UP</title>
+	<title>Case Study: Threat Modeling for a Large International Bank</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		blockquote {
+			white-space: normal;
+			word-wrap: break-word;
+		}
+
+		.columns {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+			margin-bottom: 30px;
+		}
+
+		.column {
+			width: 48%;
+		}
+
+		.box {
+			border: 1px solid #ddd;
+			padding: 15px;
+			margin-bottom: 30px;
+		}
+
+		.header-major h1 {
+			font-size: 2em;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		ul {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			font-size: 1.25em;
+			margin-bottom: 10px;
+		}
+
+		p,
+		ul {
+			margin-bottom: 15px;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -22,127 +66,136 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Practical Case</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
 		</header>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="artefact.html">List of Artefacts</a></li>
-				<li><a href="reflection.html">List of Reflections</a></li>
-				<li><a href="notes.html">List of Notes</a></li>
-
-			</ul>
-		</nav>
-
 		<!-- Main -->
 		<div id="main" class="alt">
 
-			<!-- One -->
+			<!-- Case Study Section -->
 			<section id="one">
 				<div class="inner">
 					<header class="major">
-						<h1>Generic</h1>
+						<h1>Case Study: Threat Modeling for a Large International Bank</h1>
+
 					</header>
-					<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim
-						auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque
-						in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar
-						mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque
-						enim turpis, hendrerit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class
-						aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam
-						tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc
-						ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non,
-						bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus.
-						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In
-						non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
+					<p>In this scenario, potential threats to a large international bank based in the UK are
+						analyzed using various threat modeling approaches, including STRIDE, DREAD, and Attack
+						Trees. Key resources include the Threat Modeling Manifesto, OWASP Threat Modeling Cookbook,
+						and the MITRE ATT&CK Framework.</p>
+					<!-- Step 1: Using the Cited Resources -->
+					<h2>1. Using of Resources</h2>
+					<div class="columns">
+						<div class="column">
+							<h3>Threat Modeling Manifesto</h3>
+							<p>The Threat Modeling Manifesto advocates for a collaborative and iterative approach to
+								managing threats. For a bank, it is crucial to work with security teams, compliance
+								experts, IT managers, and auditors to ensure that all layers of security—from payment
+								systems to online services—are covered.</p>
+						</div>
+
+						<div class="column">
+							<h3>OWASP Threat Modeling Cookbook</h3>
+							<ul>
+								<li>Securing APIs to protect online banking services from injection attacks.</li>
+								<li>Protecting against credential theft through multi-factor authentication (MFA) and
+									password rotation policies.</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- MITRE ATT&CK Framework -->
+					<h3>MITRE ATT&CK Framework</h3>
+					<p>The MITRE ATT&CK Framework offers specific techniques attackers may use against a bank:</p>
+					<ul>
+						<li><strong>T1078 (Account Manipulation):</strong> Used to steal credentials and access
+							sensitive customer or employee accounts.</li>
+						<li><strong>T1210 (Exploitation of Internal Applications):</strong> Attacking the bank’s
+							internal systems, such as transaction management applications.</li>
+						<li><strong>T1485 (Data Destruction):</strong> Destroying or corrupting critical banking data,
+							such as account information or transactions.</li>
+					</ul>
+
+					<!-- Step 2: Applying the Threat Models -->
+					<h2>2. Applying the Threat Models</h2>
+
+					<!-- STRIDE Method -->
+					<h3>STRIDE Method</h3>
+					<ul>
+						<li><strong>Spoofing:</strong> Theft of customer or employee credentials to access internal
+							systems or accounts. <br><em>Mitigation:</em> Multi-factor authentication and behavioral
+							analysis for suspicious logins.</li>
+						<li><strong>Tampering:</strong> Modifying financial transactions to divert funds or falsify
+							records. <br><em>Mitigation:</em> Immutable logging systems and real-time monitoring.</li>
+						<li><strong>Repudiation:</strong> A user may deny having made a fraudulent or unauthorized
+							transaction. <br><em>Mitigation:</em> Digital signatures and cryptographic transaction
+							logging.</li>
+						<li><strong>Information Disclosure:</strong> Leakage of sensitive customer data.
+							<br><em>Mitigation:</em> Data encryption across all processes and communications.
+						</li>
+						<li><strong>Denial of Service (DoS):</strong> Overloading servers to disrupt online services.
+							<br><em>Mitigation:</em> Load balancing, redundancy, and DDoS protection.
+						</li>
+						<li><strong>Elevation of Privilege:</strong> Gaining administrative privileges to access
+							customer data. <br><em>Mitigation:</em> Role-based access control (RBAC) and regular audits.
+						</li>
+					</ul>
+
+					<!-- DREAD Method -->
+					<h3>DREAD Method</h3>
+					<p>The DREAD method is used to assess the risks associated with each threat identified in STRIDE:
 					</p>
-					<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor
-						imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-						Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at,
-						elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+					<ul>
+						<li><strong>Damage Potential:</strong> A compromise of the financial transaction system could
+							result in massive losses and damage to customer trust. (Score: 9)</li>
+						<li><strong>Reproducibility:</strong> A successful attack could be repeated if the vulnerability
+							is not promptly addressed. (Score: 8)</li>
+						<li><strong>Exploitability:</strong> Phishing attacks or system vulnerabilities may allow
+							exploitation despite security measures. (Score: 6)</li>
+						<li><strong>Affected Users:</strong> Millions of customers and employees depend on these
+							systems, increasing the impact. (Score: 9)</li>
+						<li><strong>Detectability:</strong> Phishing attacks or account manipulation may go undetected
+							without user reports. (Score: 5)</li>
+					</ul>
+					<p>The total DREAD score helps prioritize which threats require immediate attention.</p>
+
+					<!-- Attack Tree -->
+					<h3>Attack Tree</h3>
+					<p>The Attack Tree models the detailed ways a threat can target the bank’s systems, focusing on
+						financial transaction systems and customer databases. This helps identify how an attack could
+						escalate through different components of the system.</p>
+					<span class="image main"><img src="images/attacktree.PNG" alt="" /></span>
+					<!-- Conclusion -->
+					<h2>Conclusion</h2>
+					<div class="box">
+						<p>This threat model for a large UK-based bank utilizes a combination of techniques from STRIDE,
+							DREAD, and Attack Trees, relying on resources such as the Threat Modeling Manifesto, OWASP
+							Threat Modeling Cookbook, and MITRE ATT&CK Framework. The identified threats, particularly
+							in transaction systems and customer data protection, require robust mitigation strategies.
+						</p>
+					</div>
+					<!-- Resources Section -->
+					<h2>Resources Used for this Model</h2>
+					<ul>
+						<li><strong>Shostack (2018):</strong> Used to understand and apply STRIDE, DREAD, and Attack
+							Trees methodologies. Provides theoretical and practical insights into these techniques.</li>
+						<li><strong>Spring et al. (2021):</strong> Critique of the CVSS system for contextual use cases,
+							highlighting the limitations of relying solely on quantitative scoring for critical
+							infrastructures such as a bank.</li>
+						<li><strong>Threat Modeling Manifesto:</strong> A guide for integrating a collaborative and
+							iterative approach in threat modeling.</li>
+						<li><strong>MITRE ATT&CK:</strong> A database for identifying specific cyberattack techniques
+							relevant to this type of infrastructure.</li>
+						<li><strong>OWASP Threat Modeling Cookbook:</strong> A practical collection of threat modeling
+							solutions tailored to different scenarios.</li>
+					</ul>
 				</div>
 			</section>
-
 		</div>
-
-		<!-- Contact -->
-		<section id="contact">
-			<div class="inner">
-				<section>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Clear" /></li>
-						</ul>
-					</form>
-				</section>
-				<section class="split">
-					<section>
-						<div class="contact-method">
-							<span class="icon solid alt fa-envelope"></span>
-							<h3>Email</h3>
-							<a href="#">information@untitled.tld</a>
-						</div>
-					</section>
-					<section>
-						<div class="contact-method">
-							<span class="icon solid alt fa-phone"></span>
-							<h3>Phone</h3>
-							<span>(000) 000-0000 x12387</span>
-						</div>
-					</section>
-					<section>
-						<div class="contact-method">
-							<span class="icon solid alt fa-home"></span>
-							<h3>Address</h3>
-							<span>1234 Somewhere Road #5432<br />
-								Nashville, TN 00000<br />
-								United States of America</span>
-						</div>
-					</section>
-				</section>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li>
-					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
 
 	</div>
 

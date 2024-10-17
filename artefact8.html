@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CVSS: Characteristics and Alternatives</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		blockquote {
+			white-space: normal;
+			word-wrap: break-word;
+		}
+
+		.columns {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		.column {
+			width: 48%;
+		}
+
+		.box {
+			border: 1px solid #ddd;
+			padding: 15px;
+		}
+
+		ul.references {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Collaborative discussion</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="artefact.html">List of Artefacts</a></li>
+				<li><a href="reflection.html">List of Reflections</a></li>
+				<li><a href="notes.html">List of Notes</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- CVSS Section -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Analysis of CVSS: Characteristics and Alternatives</h1>
+					</header>
+
+					<!-- Introduction Blockquote -->
+					<blockquote>
+						<p>Spring et al. (2021) highlight several weaknesses of the CVSS. Firstly, the calculation
+							formula lacks empirical justification, raising questions about the validity of the resulting
+							scores. Additionally, the system struggles to account for the context of vulnerabilities,
+							leading to inaccurate assessments. Finally, CVSS often confuses severity with risk, a common
+							mistake that impacts the prioritization of security actions (Spring et al., 2021).</p>
+					</blockquote>
+
+					<!-- Two Columns Layout -->
+					<div class="columns">
+						<!-- Left Column: Critical Issues with CVSS -->
+						<div class="column">
+							<h2>Critical Issues with CVSS</h2>
+							<ul>
+								<li><strong>Contextual Incompatibility:</strong> CVSS does not adapt well to specific
+									environments like embedded or safety-critical systems. For example, vulnerabilities
+									that affect system availability can have catastrophic consequences in healthcare
+									(Chase and Coley, 2019).</li>
+								<li><strong>Chained Vulnerabilities:</strong> CVSS evaluates vulnerabilities in
+									isolation, failing to capture risks posed by complex attacks that exploit multiple
+									vulnerabilities in succession (Farris et al., 2018).</li>
+							</ul>
+						</div>
+
+						<!-- Right Column: CVSS Limitations -->
+						<div class="column">
+							<h2>CVSS Limitations</h2>
+							<ul>
+								<li><strong>Equal Weighting Issue:</strong> CVSS equally weights confidentiality,
+									integrity, and availability, which may not be relevant for all industries. For
+									example, healthcare systems may prioritize availability over confidentiality
+									(Kovacs, 2018).</li>
+								<li><strong>Misleading Scores:</strong> CVSS scores can be misleading for complex
+									critical systems, as they fail to fully account for the cascading effects of
+									vulnerabilities (Kovacs, 2018).</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- CRQ Review in Box -->
+					<div class="box">
+						<h2>Cyber Risk Quantification (CRQ) as an Alternative</h2>
+						<p>Cyber Risk Quantification (CRQ) allows organizations to quantify risk in financial terms,
+							helping them better understand the potential economic impact of vulnerabilities. For
+							example, CRQ can provide more context-specific prioritization by assigning different values
+							based on the industry, such as hospitals or banks (Bowen et al., 2021).</p>
+					</div>
+
+					<!-- Conclusion -->
+					<h2>Conclusion</h2>
+					<p>While CVSS has been widely adopted, its limitations in context-specific applications and its
+						failure to address the nuances of complex vulnerabilities reduce its effectiveness in certain
+						industries. CRQ offers a more flexible and financially oriented approach, making it a robust
+						alternative for organizations seeking to prioritize risks based on economic impact and
+						operational needs.</p>
+
+					<!-- References with Bullet Points -->
+					<h2>References</h2>
+					<ul class="references">
+						<li>Bowen, P., Hash, J., Wilson, M., and Meeks, J. (2021) 'Risk management framework for
+							information systems and organizations: A system life cycle approach for security and
+							privacy', NIST Special Publication, pp. 800-37. <a
+								href="https://doi.org/10.6028/NIST.SP.800-37r2">https://doi.org/10.6028/NIST.SP.800-37r2</a>
+						</li>
+						<li>Chase, M.P. and Coley, S.M.C. (2019) 'Rubric for applying CVSS to medical devices', MITRE
+							Corporation, McLean, VA, Tech. Rep. 18-2208. <a
+								href="https://www.mitre.org/sites/default/files/2021-11/pr-18-2208-rubric-for-applying-cvss-to-medical-devices.pdf">https://www.mitre.org/sites/default/files/2021-11/pr-18-2208-rubric-for-applying-cvss-to-medical-devices.pdf</a>
+						</li>
+						<li>Farris, K.A., Shah, A., Cybenko, G., Ganesan, R., and Jajodia, S. (2018) 'Vulcon: A system
+							for vulnerability prioritization, mitigation, and management', ACM Transactions on Privacy
+							and Security, 21(4), pp. 16–25. <a
+								href="https://doi.org/10.1145/3196884">https://doi.org/10.1145/3196884</a></li>
+						<li>Kovacs, E. (2018) 'CVSS scores often misleading for ICS vulnerabilities: Experts',
+							SecurityWeek, Wired Business Media. <a
+								href="https://www.securityweek.com/cvss-scores-often-misleading-ics-vulnerabilities-experts/">https://www.securityweek.com/cvss-scores-often-misleading-ics-vulnerabilities-experts/</a>
+						</li>
+						<li>Spring, J., Hatleback, E., Householder, A., Manion, A., & Shick, D. (2021) 'Time to Change
+							the CVSS?', IEEE Security and Privacy, 19(2), pp. 74–78. <a
+								href="https://doi.org/10.1109/MSEC.2020.3044475">https://doi.org/10.1109/MSEC.2020.3044475</a>
+						</li>
+						<li>Wheeler, E. (2011) Security Risk Management: Building an Information Security Risk
+							Management Program from the Ground Up, Syngress Publishing, Chapter 7: Quantitative Risk
+							Analysis, pp. 161-188.</li>
+					</ul>
+
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Design and Review of Disaster Recovery Solutions</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		blockquote {
+			white-space: normal;
+			word-wrap: break-word;
+		}
+
+		.columns {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		.column {
+			width: 48%;
+		}
+
+		.box {
+			border: 1px solid #ddd;
+			padding: 15px;
+		}
+
+		.references {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+
+		.diagram-link {
+			color: blue;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Disaster Recovery
+					Solutions</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="artefact.html">List of Artefacts</a></li>
+				<li><a href="reflection.html">List of Reflections</a></li>
+				<li><a href="notes.html">List of Notes</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- Part A: Analysis of Articles -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Design and Review of Disaster Recovery Solutions</h1>
+					</header>
+
+					<h2>Part A: Analysis of Articles by Opara-Martins et al. (2014) and Morrow et al. (2021)</h2>
+
+					<!-- Vendor Lock-In Issues in Columns -->
+					<div class="columns">
+						<div class="column">
+							<h3>1. Vendor Lock-In Issues (Opara-Martins et al., 2014)</h3>
+							<p><strong>Key Problems Identified:</strong></p>
+							<ul>
+								<li>Data and format compatibility: Data or applications developed for a particular cloud
+									provider may not be compatible with other platforms, making migration difficult.
+								</li>
+								<li>Proprietary features and closed APIs: The use of proprietary APIs restricts
+									migration options by locking users into specific architectures.</li>
+								<li>High migration costs: The financial and operational costs of transferring data,
+									applications, and systems to another provider can be prohibitive.</li>
+							</ul>
+							<p><strong>Mitigating Vendor Lock-In:</strong></p>
+							<ul>
+								<li>Adopting open standards: Using open APIs and interoperable data standards is crucial
+									to ensure systems can be easily migrated to another provider.</li>
+								<li>Using multi-cloud solutions: Distributing resources across multiple cloud providers
+									reduces dependency on a single provider and mitigates risks related to a provider's
+									failure or abusive practices.</li>
+								<li>Flexible contractual clauses: Negotiating contracts with easy exit mechanisms or
+									conditions for data transfer without excessive fees can reduce the impact of
+									lock-in.</li>
+							</ul>
+						</div>
+
+						<div class="column">
+							<h3>2. Security Issues in Modern Cloud Solutions (Morrow et al., 2021)</h3>
+							<p><strong>Key Security Issues:</strong></p>
+							<ul>
+								<li>Data privacy: Storing sensitive data in the cloud can lead to risks of privacy
+									breaches.</li>
+								<li>Identity and access management (IAM): Poor access rights management can expose
+									critical data to unauthorized users.</li>
+								<li>API security: Vulnerable APIs can serve as entry points for cyberattacks.</li>
+								<li>Lack of visibility and control: In a cloud environment, companies often lose direct
+									control over their infrastructure, complicating security monitoring.</li>
+							</ul>
+							<p><strong>Mitigating Security Issues:</strong></p>
+							<ul>
+								<li>Data encryption: Using encryption for data at rest and in transit ensures that
+									sensitive information is protected from unauthorized access.</li>
+								<li>Strict IAM policies: Implementing strict identity and access management policies
+									ensures that only authorized users can access critical data and systems.</li>
+								<li>Continuous auditing and monitoring: Cloud systems must be continuously monitored and
+									audited to identify suspicious or abnormal activities.</li>
+								<li>Utilizing native cloud security tools: Cloud providers offer integrated security
+									solutions, such as firewalls, intrusion detection systems (IDS), and vulnerability
+									management solutions.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Part B: DR Solutions Design -->
+			<section id="two" class="spotlights">
+				<section>
+					<div class="image">
+						<img src="images/scenario1.PNG" alt="Scenario 1 Diagram" data-position="center center" />
+					</div>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Scenario 1: RPO = 1 hour; RTO = 8 hours; High Availability Required</h3>
+							</header>
+							<p><strong>Solution Description:</strong> Mirrored infrastructure with automatic failover:
+								Redundant servers distributed across multiple data centers. If the primary server fails,
+								the system automatically switches to the secondary server.</p>
+							<ul>
+								<li>Synchronous data replication: Real-time replication between the primary and
+									secondary sites ensures a maximum data loss of 1 hour.</li>
+								<li>Hourly backups: Backups are performed every hour to an offsite storage, ensuring
+									data is always up-to-date.</li>
+								<li>Real-time monitoring: A monitoring system is in place to detect any server failure
+									and trigger failover when necessary.</li>
+							</ul>
+
+						</div>
+
+					</div>
+
+				</section>
+				<blockquote>
+					<p>The Primary Data Center contains two application servers (App Server 1 and App Server
+						2) connected to a shared database (Database 1). These servers are behind a load
+						balancer that manages traffic and directs users to the available servers. The
+						monitoring system continuously checks the status of the applications and database to
+						ensure availability.
+						The Secondary Data Center acts as a failover site. It includes two backup servers
+						(Failover App Server 1 and 2) with a replicated database (Failover Database).
+						Synchronous replication ensures real-time updates between the primary and secondary
+						databases. In case of failure in the primary site, the load balancer automatically
+						switches traffic to the secondary servers.
+						Hourly backups are performed to an offsite storage system for additional recovery
+						options in case of a disaster that affects both data centers.</p>
+				</blockquote>
+
+				<section>
+					<div class="image">
+						<img src="images/scenario2.PNG" alt="Scenario 2 Diagram" data-position="center center" />
+					</div>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Scenario 2: RPO = 24 hours; RTO = 72 hours; HA Not Required</h3>
+							</header>
+							<p><strong>Solution Description:</strong> Daily backups with asynchronous replication: Data
+								is backed up once per day, allowing a maximum data loss of 24 hours.</p>
+							<ul>
+								<li>Offsite storage: Backups are stored in a remote cloud or physical site, ensuring
+									secure long-term storage.</li>
+								<li>Manual restoration: Since high availability is not required, system restoration can
+									be done manually within 72 hours, providing ample time for recovery.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<blockquote>
+					<p>The Primary Data Center houses two application servers (App Server 1 and App Server 2) that
+						connect to a main database (Database 1). The data is asynchronously replicated to a Backup
+						Database at a secondary site, meaning that data is not immediately synchronized, but backed up
+						periodically.
+						A Backup Server performs daily backups to an Offsite Storage system, providing a secure location
+						for long-term data storage. In the event of a disaster, these backups are used to restore the
+						system, though the process is manual.
+						The Backup Site has its own application servers that can be brought online within 72 hours if
+						needed. These backup servers are not always active, allowing for a slower restoration process
+						when high availability is not required.</p>
+				</blockquote>
+
+				<section>
+					<div class="image">
+						<img src="images/scenario3.PNG" alt="Scenario 3 Diagram" data-position="center center" />
+					</div>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Scenario 3: RPO = 5 minutes; RTO = 1 hour; High Availability Required</h3>
+							</header>
+							<p><strong>Solution Description:</strong> Continuous replication with automatic failover:
+								Data is replicated almost in real-time, ensuring a maximum data loss of 5 minutes.</p>
+							<ul>
+								<li>Virtualized critical systems: Critical systems are virtualized to allow rapid
+									recovery and deployment, ensuring that services can be restored in under an hour.
+								</li>
+								<li>Hybrid cloud architecture: A hybrid cloud setup uses both private and public clouds.
+									The private cloud handles critical applications, while the public cloud manages less
+									sensitive data, providing flexibility and high availability.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<blockquote>
+					<p>The Private Cloud houses critical application servers (Critical App Server 1 and 2) connected to
+						a Critical Database. These systems are virtualized to allow for fast recovery and scaling. The
+						critical data is continuously replicated to the Public Cloud.
+						The Public Cloud handles less critical applications (Non-Critical App Server 1 and 2) and stores
+						the Non-Critical Database. The public cloud is also virtualized, allowing it to handle the
+						overflow in case of a disaster in the private cloud.
+						Data is replicated in near-real-time between the critical and non-critical databases, ensuring
+						that data loss is minimized to 5 minutes. Backups are taken every 5 minutes to an offsite secure
+						storage, providing additional layers of data protection.
+						In case of a failure, the system automatically switches to the Public Cloud for recovery,
+						ensuring that services are restored within an hour.
+					</p>
+				</blockquote>
+			</section>
+
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

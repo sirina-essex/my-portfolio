@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Reflections on Disaster Recovery</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		blockquote {
+			white-space: normal;
+			word-wrap: break-word;
+		}
+
+		.columns {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		.column {
+			width: 48%;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Reflections</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="launch.html">Launching in Cyber Security</a></li>
+				<li><a href="network.html">Network Security</a></li>
+				<li><a href="forensics.html">Principles of Digital Forensics and Cyber Law</a></li>
+				<li><a href="risk.html">Security and Risk Management</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- Reflection Section -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Practical Applications and Challenges of Disaster Recovery(DR)</h1>
+					</header>
+					<blockquote>
+						<p>I explored the practical aspects of designing and implementing disaster recovery (DR)
+							solutions, considering critical elements such as Recovery Point Objective (RPO), Recovery
+							Time Objective (RTO), and high availability (HA). I gained a deeper understanding of how
+							these factors influence the choice and design of DR solutions, especially in cloud-based
+							environments.</p>
+					</blockquote>
+
+					<!-- Two Columns for What I Learned and Learning Outcomes -->
+					<div class="columns">
+						<!-- Left Column: What I Learned -->
+						<div class="column">
+							<h2>What I Learned</h2>
+							<ul>
+								<li><strong>Impact of RPO and RTO values on DR solutions:</strong> RPO and RTO are two
+									fundamental concepts in disaster recovery planning. For example, a company with an
+									RPO of 1 hour and an RTO of 8 hours would need mirrored backup infrastructure with
+									frequent replications to minimize data loss and quickly restore systems.</li>
+								<li><strong>Typical DR solutions and their limitations:</strong> We explored solutions
+									ranging from manual backups to synchronous replication. Each solution has its
+									limitations, particularly regarding cost and complexity.</li>
+								<li><strong>Vendor lock-in issues and resilience:</strong> Vendor lock-in is a major
+									challenge, particularly in cloud environments. Multi-cloud strategies and open
+									standards can mitigate this risk and improve resilience.</li>
+							</ul>
+						</div>
+
+						<!-- Right Column: Learning Outcomes -->
+						<div class="column">
+							<h2>Learning Outcomes</h2>
+							<ul>
+								<li><strong>Designing solutions based on RPO and RTO requirements:</strong> I learned
+									how to tailor DR solutions to specific RPO/RTO needs. For instance, a 5-minute RPO
+									and 1-hour RTO require synchronous replication with automatic failover.</li>
+								<li><strong>Understanding DRaaS (Disaster Recovery as a Service):</strong> DRaaS is a
+									cost-effective solution, but companies must weigh data security and provider
+									dependency. It's particularly useful for SMEs needing flexible recovery solutions.
+								</li>
+								<li><strong>Resilience and security in cloud environments:</strong> Cloud-based DR
+									solutions require a layered security approach, including encryption and access
+									management, to protect shared environments.</li>
+							</ul>
+						</div>
+					</div>
+
+					<h2>Critical and Personal Reflections</h2>
+					<blockquote>
+						<p>The project of designing DR solutions highlighted the importance of balancing cost
+							constraints with operational needs. It also gave me a deeper understanding of the complexity
+							and rewarding challenge of designing tailored DR solutions for real-time replication and
+							cloud-based infrastructures.</p>
+					</blockquote>
+
+					<!-- Box for Final Reflections -->
+					<div class="box">
+						<p>Designing disaster recovery solutions is a critical step in ensuring organizational
+							resilience, especially as cloud-based solutions like DRaaS grow in importance. However,
+							implementation challenges remain, particularly when balancing cost, security, and
+							performance requirements.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -99,148 +99,236 @@
 
 						The company has chosen a multi-cloud solution (AWS, Azure, GCP) to ensure resilience,
 						scalability, and rapid disaster recovery in case of incidents.</p>
-					<h2>Identifying Potential Risks
-					</h2>
-					<p>Several risks were identified, affecting both product quality and supply chain security. The
-						following quantitative methods were used to model these risks:</p>
-					<ul>
-						<li><strong>STRIDE:</strong> to identify digital threats related to system and data security.
-						</li>
-						<li><strong>Risk Breakdown Structure (RBS):</strong> to structure and categorize these risks.
-						</li>
-						<li><strong>Monte Carlo Simulation:</strong> to estimate the probability and financial impact of
-							different risk
-							scenarios.
-						</li>
-						<li><strong>Failure Modes and Effects Analysis (FMEA):</strong> to prioritize risks based on
-							their severity and
-							frequency.
-						</li>
-						<li><strong>Bayesian Networks:</strong> to model the interdependencies between risks.
-						</li>
-					</ul>
+					<section id="risks">
+						<div class="inner">
+							<header class="major">
+								<h2>Identifying Potential Risks</h2>
+							</header>
+							<p>Several risks were identified, affecting both product quality and supply chain security.
+								The
+								following quantitative methods were used to model these risks:</p>
 
-					<!-- Section 2: Current Business Model -->
-					<h2>2. Current Business Model</h2>
-					<p>Pampered Pets uses partially digitized processes, such as stock tracking via networked computers,
-						but risks like unauthorized access, system failures, and manual handling errors remain.</p>
-					<span class="image"><img src="images/figure2.PNG" alt="" style="width:50%;" /></span>
-					<h3>Risk Assessment for Existing Processes
-					</h3>
-					<p>Key risks identified include network vulnerabilities, outdated systems, reliance on local
-						suppliers, and lack of a digital presence. These were assessed using the ISO31000 framework.
+							<!-- STRIDE -->
+							<li><strong>STRIDE:</strong> to identify digital threats related to system and data
+								security.</li>
+							<span class="image"><img src="images/stride.png" alt="STRIDE Image"
+									style="width:70%;" /></span>
 
-					</p>
-					<table>
-						<thead>
-							<tr>
-								<th>Source</th>
-								<th>Threats</th>
-								<th>Risks</th>
-								<th>Impact</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Network Vulnerabilities</td>
-								<td>Unauthorized access, malware attacks, data breaches</td>
-								<td>Loss of sensitive customer data, operational disruptions</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Old Computer Use</td>
-								<td>System failures, outdated software vulnerabilities</td>
-								<td>Data loss, inefficient tracking of inventory</td>
-								<td>Medium</td>
-							</tr>
-							<tr>
-								<td>Dependency on Local Suppliers</td>
-								<td>Supply chain disruptions, supplier failures</td>
-								<td>Inability to meet customer demand, loss of reputation</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Manual Handling of Orders</td>
-								<td>Order errors, delayed processing</td>
-								<td>Customer dissatisfaction, loss of sales</td>
-								<td>Medium</td>
-							</tr>
-							<tr>
-								<td>Lack of Digital Presence</td>
-								<td>Inability to capture online sales, limited market reach</td>
-								<td>Stagnant growth, reduced competitiveness</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Data Backup and Recovery</td>
-								<td>Data loss due to hardware failure or cyber incidents</td>
-								<td>Loss of transaction records, financial disruptions</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Physical Security of the Premises</td>
-								<td>Theft, vandalism</td>
-								<td>Loss of inventory, damage to property</td>
-								<td>Medium</td>
-							</tr>
-						</tbody>
-					</table>
 
-					<blockquote>
-						<p>Mitigations: Implement strong firewalls, antivirus software, and regular software updates.
-							Provide employee training on cybersecurity best practices and ensure regular data backups to
-							a secure cloud service.</p>
-					</blockquote>
+							<!-- Risk Breakdown Structure (RBS) - Image Right -->
+							<div class="row">
+								<div class="col-6">
+									<li><strong>Risk Breakdown Structure (RBS):</strong> to structure and categorize
+										these risks.</li>
+								</div>
+								<div class="col-6">
+									<span class="image"><img src="images/risk.PNG" alt="RBS Image"
+											style="width:70%;" /></span>
+								</div>
+							</div>
 
-					<!-- Section 3: Proposed Business Model -->
-					<h2>3. Proposed Digitalization and E-Commerce Strategy
-					</h2>
-					<p>The benefits of digitizing the business and adopting an e-commerce platform are highlighted in
-						the proposed new model. However, the digital shift increases warehouse workload, requiring
-						further staff and IT support.</p>
-					<span class="image"><img src="images/figure3.PNG" alt="" style="width:50%;" /></span>
-					<h3>Risk Assessment for Digital Process</h3>
-					<blockquote>
-						<p>Mitigation approaches include using comprehensive cybersecurity measures such as firewalls,
-							antivirus software, phased digital transformation, employee engagement strategies, and
-							supplier vetting.</p>
-					</blockquote>
-					<!-- Section 3b: Risk Assessment for Digital Processes -->
-					<h2>Risk Assessment for Digital Processes
-					</h2>
-					<p>The risks associated with digitization were evaluated using a combination of STRIDE and OCTAVE
-						models.</p>
-					<span class="image main"><img src="images/figure4.PNG" alt="" style="width:70%;" /></span>
-					<h3>Risk Assessment for Digital Process</h3>
-					<blockquote>
-						<p>Mitigation approaches include using comprehensive cybersecurity measures such as firewalls,
-							antivirus software, phased digital transformation, employee engagement strategies, and
-							supplier vetting.</p>
-					</blockquote>
+							<!-- Monte Carlo Simulation - Image Left -->
+							<div class="row">
+								<div class="col-6">
+									<span class="image"><img src="images/simulation.png"
+											alt="Monte Carlo Simulation Image" /></span>
+								</div>
+								<div class="col-6">
+									<li><strong>Monte Carlo Simulation:</strong> to estimate the probability and
+										financial impact of
+										different risk scenarios.
+									</li>
+									<blockquote>
+										<p>The Monte Carlo simulation revealed that Pampered Pets could face average
+											annual costs of
+											€49,408.45, with a 90% chance that these costs will not exceed €135,000.
+										</p>
+									</blockquote>
+								</div>
+							</div>
 
-					<!-- Section 3c: Phased Implementation -->
-					<h2>Phased Implementation
-					</h2>
-					<p>A phased implementation plan was proposed to minimize disruption during the transition, with
-						gradual investments in order management and infrastructure expansion.</p>
-					<h4>E-commerce phased implementation</h4>
-					<span class="image"><img src="images/figure5.PNG" alt="" style="width:70%;" /></span>
+							<!-- FMEA - No Image -->
+							<div class="row">
+								<div class="col-12">
+									<li><strong>Failure Modes and Effects Analysis (FMEA):</strong> to prioritize risks
+										based on
+										their severity and frequency.</li>
+									<a href="images/FMEA.pdf" target="_blank">Click here to view the FMEA result</a>
+								</div>
+							</div>
 
-					<h4>New organizational structure</h4>
-					<span class="image"><img src="images/figure6.PNG" alt="" style="width:65%;" /></span>
-					<!-- Section 4: Project Outline -->
-					<h2>4. Project Outline</h2>
-					<p>A phased implementation of digital transformation is recommended, starting with backend systems
-						like inventory management, followed by customer-facing platforms. Additional staff will be
-						needed to handle increased warehouse operations and oversee digital risk management.</p>
+							<!-- Bayesian Networks - Image Right -->
+							<div class="row">
+								<div class="col-6">
+									<li><strong>Bayesian Networks:</strong> to model the interdependencies between
+										risks.</li>
+								</div>
+								<div class="col-6">
+									<span class="image"><img src="images/cascade.png" alt="Bayesian Networks Image"
+											style="width:100%;" /></span>
+								</div>
+							</div>
+						</div>
+					</section>
 
-					<!-- Conclusion -->
-					<h2>5. Conclusion</h2>
 					<div class="box">
-						<p>We recommend Pampered Pets invest in an e-commerce platform to capture at least 6.6% of the
-							market. Additionally, suppliers should be reviewed to find savings, ensuring quality control
-							to protect the brand’s reputation.</p>
+						<h2>Results
+						</h2>
+						<p>The key risks include::</p>
+						<li> <strong>Product quality loss</strong> (€20,000 | 30%)</li>
+						<li> <strong>Automated system failures</strong> (€50,000 per day of downtime | 15%)</li>
+						<li> <strong>Supply chain delays</strong> (€15,000 per month | 20%)</li>
 					</div>
+					<!-- Section 2: Recommendations -->
+					<h2>Recommendations</h2>
+					<blockquote>
+						<li><strong>Outsourcing cybersecurity and critical infrastructure management:</strong> This
+							would allow Pampered Pets to benefit from specialized expertise while ensuring regulatory
+							compliance. <a href="images\appendix1.pdf" target="_blank"> <strong> Click here to view the
+									Appendix 1 _
+									Analysis
+									of
+									Applicable Standards for Pampered Pets</strong></a></li>
+						<blockquote>
+							<ul>
+								<li><strong>GDPR:</strong> Protection of personal data through regular audits, clear
+									privacy
+									policies, and encryption of sensitive data.</li>
+								<li><strong>ISO/IEC 27001:</strong> Implementation of an Information Security Management
+									System (ISMS), strict management of access to critical information, and regular
+									testing
+									to identify vulnerabilities.</li>
+								<li><strong>ISO 22301:</strong> Establishment of a Business Continuity Plan (BCP) with a
+									disaster recovery strategy for critical systems, ensuring that Pampered Pets can
+									continue operations in the event of a major disruption.</li>
+								<li><strong>PCI DSS:</strong> Securing online credit card transactions with encryption
+									systems and regular monitoring of transactions to ensure their integrity.</li>
+								<li><strong>ISO 9001:</strong> Implementation of a Quality Management System (QMS),
+									conducting regular quality audits, and ensuring continuous improvement of production
+									processes.</li>
+								<li><strong>ISO 28000:</strong> Management of logistical risks through the integration
+									of
+									buffer stocks, monitoring supplier performance, and implementing a risk management
+									plan.
+								</li>
+								<li><strong>NIS2:</strong> Strengthening cybersecurity for critical infrastructures with
+									incident management protocols and regular communication with competent authorities
+									in
+									the event of a cyberattack.</li>
+							</ul>
+						</blockquote>
+
+						<li><strong>Business Continuity Plan (BCP) and Disaster Recovery (DR) Strategy:</strong>
+							Establish a plan to ensure operational continuity in the event of a disaster, including
+							real-time monitoring and redundancy processes for critical systems.</li>
+						<li><strong>Proactive management of quality and supply chain:</strong>
+							Diversify suppliers and establish buffer stocks to reduce the impact of delays.</li>
+					</blockquote>
+					<span class="image"><img src="images/recomandation.PNG" alt="" style="width:70%;" /></span>
+
+					<!-- Section 3: Multiplateform -->
+					<h2>Multi-Cloud Architecture</h2>
+					<p>Pampered Pets is adopting a robust multi-cloud architecture to ensure both Business Continuity
+						(BC) and Disaster Recovery (DR). This architecture, leveraging Amazon Web Services (AWS),
+						Microsoft Azure, and Google Cloud Platform (GCP), distributes critical workloads across multiple
+						platforms, minimizing the risk of failure and ensuring rapid recovery in the event of an
+						incident.</p>
+					<h3>AWS – Managing Critical Systems and DR
+
+					</h3>
+					<p>AWS is used to manage critical systems, including warehouse automation and online transaction
+						processing. Key AWS services include:
+					</p>
+					<span class="image"><img src="images/aws.png" alt="" style="width:70%;" /></span>
+					<h3>Azure – Managing Supply Chain and BC
+
+					</h3>
+					<p>Microsoft Azure is responsible for managing the supply chain and stock, with a focus on business
+						continuity:
+					</p>
+					<span class="image"><img src="images/azure.png" alt="" style="width:70%;" /></span>
+					<h3>GCP – Network Performance Optimization and DR
+
+					</h3>
+					<p>Google Cloud Platform (GCP) is used to optimize network performance and ensure data replication
+						globally:
+					</p>
+					<span class="image"><img src="images/gcp.png" alt="" style="width:70%;" /></span>
+					<blockquote>
+						<p>
+							<li>AWS ensures critical systems remain accessible
+								even during major outages. Continuous monitoring and data replication ensure RTO
+								(Recovery Time Objective) and RPO (Recovery Point Objective) remain below one minute,
+								minimizing disruptions.
+							</li>
+							<li>Azure ensures that supply chain management remains
+								efficient and that stock is available even during significant outages. Through
+								monitoring tools and redundancy, Azure ensures business operations can continue without
+								significant disruption.
+							</li>
+							<li>GCP ensures that critical data is continuously
+								replicated across multiple regions. System redundancy and optimized network management
+								guarantee fast recovery in case of a disaster, without compromising service quality.
+							</li>
+						</p>
+					</blockquote>
+
+
+					<!-- Section 4: DR BC -->
+					<h2>Business Continuity (BC) and Disaster Recovery (DR) Strategy
+					</h2>
+					<div class="box">
+						<p>The combination of AWS, Azure, and GCP creates a resilient multi-cloud architecture that
+							addresses BC and DR needs:</p>
+						<li><strong>High availability:</strong> Redundancy of critical systems and data replication
+							across
+							multiple regions ensure services remain available even if one provider experiences downtime.
+						</li>
+						<li><strong>Rapid recovery: </strong> Real-time monitoring systems such as AWS CloudWatch, Azure
+							Monitor, and Google Cloud Operations automatically trigger failovers to other platforms in
+							case
+							of failure. This enables extremely short RPO and RTO (less than one minute).
+						</li>
+						<li><strong>Flexibility and reduction of vendor lock-in:</strong> Open technologies like
+							Kubernetes
+							for container orchestration allow applications to be deployed on any platform, reducing
+							dependency on a single provider. This ensures greater flexibility in case of a provider
+							change.
+						</li>
+					</div>
+					<blockquote>
+						<h3>Automatic Failover and Data Recovery
+						</h3>
+						<p>In the event of a failure, automatic failover mechanisms redirect critical services to
+							available platforms:</p>
+						<li>AWS Elastic Load Balancer, Azure Traffic Manager, and Google Cloud Load Balancer ensure
+							traffic
+							distribution, preventing service interruption
+						</li>
+						<li>Data replication across platforms guarantees quick recovery, enabling systems to return to
+							their
+							initial state once the failure is resolved (<strong>failback</strong>).
+						</li>
+					</blockquote>
+					<span class="image"><img src="images/multicloud.png" alt="" style="width:93%;" /></span>
+
+
+				</div>
+			</section>
+			<section id="last">
+				<div class="inner">
+					<header class="major">
+						<h2>Conclusion</h2>
+					</header>
+					<p>Pampered Pets identifies critical risks: product quality loss, automated system failures, and
+						supply chain delays. Quantitative methods reveal the financial impacts. Recommendations
+						include outsourcing cybersecurity, diversifying suppliers, and strengthening quality control.
+						The multi-cloud strategy ensures resilience, scalability, and security. Through proactive
+						monitoring and robust failover systems, Pampered Pets guarantees continuous operations
+						24/7, 365 days a year.</p>
+					<ul class="actions">
+						<li><a href="images\Project.pdf" class="button next">Get the full Report details</a></li>
+					</ul>
 				</div>
 			</section>
 		</div>

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Case Study: Risk Assessment of Digitalisation</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		blockquote {
+			white-space: normal;
+			word-wrap: break-word;
+		}
+
+		.columns {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		.column {
+			width: 48%;
+		}
+
+		.box {
+			border: 1px solid #ddd;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Collaborative Discussion
+					2</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="artefact.html">List of Artefacts</a></li>
+				<li><a href="reflection.html">Reflections</a></li>
+
+			</ul>
+		</nav>
+
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- Case Study Section -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Peer feedback</h1>
+					</header>
+					<p>This page highlights the peer contributions to my work throughout the Collaborative
+						disussion 2
+						about "Analysis of CVSS: Characteristics, critique and Alternatives", where they provided
+						constructive feedback to improve the quality and depth of the topic.</p>
+
+					<!-- First Peer Response -->
+					<div class="box">
+						<h2>Peer Response 1</h2>
+						<blockquote>
+							<p><strong>Hi Irina,</strong></p>
+							<p>Thank you for sharing your thoughts about CVSS.</p>
+							<p>While the latest version of CVSS was recently published and offers significant
+								improvements over its predecessor, the system still fails to address important aspects
+								such as inadequate representation of real-world risk and limited scope and lack of
+								context, which includes the potential for chained exploits (Divinsky, 2023).</p>
+							<p>I would argue that the chaining of different vulnerabilities is an easy-to-understand
+								topic, and neither is the modeling of such threats. Robinson (2022) concluded in her
+								paper titled “An Exploratory Study into Vulnerability Chaining Blindness Terminology and
+								Viability” that IT and cybersecurity professionals often lack awareness of vulnerability
+								chaining, a term that refers to the potential compounding effects of multiple
+								vulnerabilities. Although cybersecurity professionals acknowledge its importance, the
+								term is not well-understood or widely used across the board, especially within IT
+								operations teams.</p>
+							<p>There is a gap between IT and cybersecurity professionals. While both groups recognize
+								the need for holistic, risk-based management of security, IT professionals are more
+								concerned with system functionality and user needs, rather than focusing on the broader
+								implications of lower-priority vulnerabilities that could be exploited in combination.
+								On the other hand, cybersecurity professionals see the value in addressing these
+								vulnerabilities but struggle with the complexity and sheer volume of information
+								required to implement defense in depth effectively.</p>
+							<p><strong>Word count:</strong> 220</p>
+
+							<p><strong>References:</strong><br>
+								Divinsky, Y. (2023) CVSS v4.0 - what you need to know. Available from: <a
+									href="https://vulcan.io/blog/cvss-v4-0-what-you-need-to-know/"
+									target="_blank">here</a> [Accessed 22 September 2024].<br>
+								Robinson, N. (2022) An Exploratory Study into Vulnerability Chaining Blindness
+								Terminology and Viability. ArXiv.org. DOI: <a
+									href="https://doi.org/10.48550/arXiv.2203.10403"
+									target="_blank">https://doi.org/10.48550/arXiv.2203.10403</a>
+							</p>
+						</blockquote>
+					</div>
+
+					<!-- Second Peer Response -->
+					<div class="box">
+						<h2>Peer Response 2</h2>
+						<blockquote>
+							<p><strong>Thank you Irina for sharing your thoughts.</strong></p>
+							<p>The criticisms of CVSS by Spring et al. (2021) highlight significant shortcomings that
+								undermine its effectiveness in assessing vulnerabilities. One major issue is the lack of
+								empirical justification for its calculation formula, which raises questions about the
+								reliability of the scores generated. In sensitive sectors such as healthcare, where
+								system availability can be crucial, an incorrect assessment could have disastrous
+								consequences (Chase and Coley, 2019). Equally weighting confidentiality, integrity, and
+								availability axes does not take into account sector specificities. For example, a
+								vulnerability that threatens availability can put lives at risk.</p>
+							<p>Furthermore, CVSS assesses vulnerabilities in isolation, ignoring the risks associated
+								with complex attacks that exploit multiple weaknesses in a chain. This approach is
+								particularly problematic in interconnected systems, where vulnerabilities can interact
+								in a non-linear manner, leading to overall impacts that are often underestimated (Farris
+								et al., 2018).</p>
+							<p>On the other hand, cyber risk quantification (CRQ) appears to be a more suitable method.
+								It allows organizations to assess risks in financial terms, thus providing a better
+								understanding of the economic impacts of each vulnerability. This contextualized
+								approach, oriented towards the specific consequences of each sector, facilitates more
+								informed strategic decision-making.</p>
+							<p>In short, it is imperative to adopt assessment methodologies that consider the
+								operational context to improve risk management in critical environments, where precision
+								is essential.</p>
+							<p><strong>Words Count:</strong> 216</p>
+
+							<p><strong>References:</strong><br>
+								Chase, M.P. and Coley, S.M.C. (2019) 'Rubric for applying CVSS to medical devices',
+								MITRE Corporation, McLean, VA, Tech. Rep. 18-2208. <a
+									href="https://www.mitre.org/sites/default/files/2021-11/pr-18-2208-rubric-for-applying-cvss-to-medical-devices.pdf"
+									target="_blank">Link</a> [Accessed 10 September 2024].<br>
+								Farris, K.A., Shah, A., Cybenko, G., Ganesan, R., and Jajodia, S. (2018) 'Vulcon: A
+								system for vulnerability prioritization, mitigation, and management', ACM Transactions
+								on Privacy and Security, 21(4), pp. 16–25. DOI: <a
+									href="https://doi.org/10.1145/3196884"
+									target="_blank">https://doi.org/10.1145/3196884</a> [Accessed 10 September
+								2024].<br>
+								Spring, J., Hatleback, E., Householder, A., Manion, A., & Shick, D. (2021) 'Time to
+								Change the CVSS?', IEEE Security and Privacy, 19(2), pp. 74–78. DOI: <a
+									href="https://doi.org/10.1109/MSEC.2020.3044475"
+									target="_blank">https://doi.org/10.1109/MSEC.2020.3044475</a> [Accessed 10 September
+								2024].
+							</p>
+						</blockquote>
+					</div>
+
+
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

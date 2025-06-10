@@ -64,89 +64,91 @@
 			<section id="one">
 				<div class="inner">
 					<header class="major">
-						<h1>User Participation in the Risk Management Process</h1>
-						<p>Based on the article by Spears & Barki (2010)</p>
+						<h1>Research Proposal Review</h1>
+						<p>Unit 3</p>
 					</header>
 
 					<!-- Introduction Blockquote -->
 					<blockquote>
-						<p>This activity explores the importance of user involvement in the risk management process,
-							using both qualitative and quantitative approaches as described by Spears & Barki (2010). It
-							also examines how the lack of user participation can affect risk assessment and proposes
-							mitigation measures.</p>
+						<p>My capstone project, titled <strong>“Identity and Access Governance in Microsoft Azure: Experimenting IAM Strategies through Entra ID in a Vulnerable Cloud Environment Based on Zero Trust Principles”</strong>, aims to assess the effectiveness, granularity, and governance potential of native IAM mechanisms in Azure. The project uses the deliberately vulnerable open-source application Broken Crystal as a testbed to simulate realistic yet insecure access conditions.
+</p>
 					</blockquote>
 
 					<!-- Two Columns Layout -->
 					<div class="columns">
-						<!-- Left Column: Qualitative and Quantitative Approaches -->
+						<!-- Left Column: Type of Research -->
 						<div class="column">
-							<h2>1. Qualitative and Quantitative Approaches</h2>
-							<p>The authors use both qualitative methods (interviews, discussions, open-ended
-								questionnaires) and quantitative methods (measurable data, probabilities) to provide a
-								comprehensive view of risks in information systems projects. These approaches complement
-								each other by allowing:</p>
+							<h2>1. Type of Research</h2>
+							<p>This research follows a threefold approach:</p>
 							<ul>
-								<li>The identification of hidden risks through contextual data (qualitative).</li>
-								<li>The objective measurement of impacts (quantitative).</li>
+								<li><strong>Exploratory</strong>, as it investigates the concrete implementation of advanced IAM strategies (RBAC, PIM, CA, MFA, Access Reviews) in a complex and under-documented context.</li>
+								<li><strong>Experimental</strong>, since it involves configuring and manipulating security policies in a controlled environment.</li>
+								<li><strong>Evaluative</strong>, because it seeks to assess the actual impact of these mechanisms on access security, governance, and traceability, in reference to Zero Trust principles (NIST SP 800-207).</li>
 							</ul>
 
-							<h2>2. Advantages of User Involvement</h2>
-							<p>User involvement improves the accuracy of risk assessments, strengthens adherence to the
-								process, reduces communication errors, and facilitates the acceptance of necessary
-								changes.</p>
+							
 						</div>
 
-						<!-- Right Column: Impact of Lack of User Access and Monte Carlo Simulation -->
+						<!-- Right Column: Research Design -->
 						<div class="column">
-							<h2>3. Impact of Lack of User Access</h2>
-							<p>The absence of user participation can:</p>
+							<h2>2. Research Design</h2>
+							<p>The research adopts a mixed-methods design, combining:</p>
 							<ul>
-								<li>Limit the accuracy of qualitative assessments.</li>
-								<li>Lead to errors in risk assumptions.</li>
-								<li>Reduce the effectiveness of mitigation strategies.</li>
+								<li>A case study based on Broken Crystal, integrated into an Azure tenant;</li>
+								<li>A controlled experiment, where each IAM mechanism is deployed in isolation or in combination;</li>
+								<li>Simulated scenarios, driven by realistic personas (internal collaborator, external developer, malicious actor …);</li>
+								<li>A comparative approach, to evaluate the relative effectiveness of different IAM configurations (e.g., RBAC alone vs RBAC + PIM).</li>
 							</ul>
 
-							<h2>4. Monte Carlo Simulation</h2>
-							<p>A Monte Carlo simulation was conducted to quantify the impact of the lack of user
-								participation on risk assessment. The goal is to show how varying levels of
-								participation influence the overall result of a risk evaluation.</p>
+							
+							<p>Each test follows a structured scenario, with clear deployment, execution, and observation phases ensuring full traceability.</p>
 						</div>
 					</div>
 
-					<!-- Key Risk Assessment Results Box -->
+					<!-- Data Collection Methods and Data Types Box -->
 					<div class="box">
-						<h2>Simulation Results</h2>
-						<p>Simulation of 10,000 user participation scenarios is made using a normal distribution
-							(centered around
-							60% with a standard deviation of 15%). Here are the key results:</p>
+						<h2>Data Collection Methods and Data Types</h2>
+						<p>The data collection strategy includes:</p>
 						<ul>
-							<li><strong>Expected average benefit:</strong> On average, the expected benefit is 91.04
-								units, meaning that even considering low participation scenarios, the return remains
-								relatively high.</li>
-							<li><strong>Probability of error:</strong> There is a 9.66% probability that user
-								participation will be less than 40%, leading to significant errors in risk evaluation.
-							</li>
+							<li><strong> Direct observation</strong>, to document visible outcomes (access denial, privilege escalation, triggered alerts);</li>
+							<li><strong>System logs</strong>  (Azure Monitor, Log Analytics, Defender for Cloud), capturing quantifiable events;						</li>
+							<li><strong>Automated captures</strong>  of dashboards and reports;</li>
+							<li><strong>Documentary analysis</strong>, drawing on Microsoft documentation and regulatory frameworks (NIST ZTA, Entra ID official guidance).</li>
+						</ul>
+						<p>Data types include:</p>
+						<ul>
+							<li><strong> Primary data</strong>, generated through testing;</li>
+							<li><strong>Secondary data</strong>, from technical documentation and academic sources;</li>
+							<li><strong>Quantitative data</strong>  (event frequency, timestamps, access attempts …);</li>
+							<li><strong>Qualitative data</strong>, (policy configurations, log content, unexpected behaviors).</li>
 						</ul>
 					</div>
 
-					<!-- Two Columns Layout for Conclusion -->
+					<!-- Two Columns Layout  -->
 					<div class="columns">
-						<!-- Left Column: Practical Recommendations -->
+						<!-- Left Column: Data Analysis and Evaluation Framework -->
 						<div class="column">
-							<h2>Practical Recommendations</h2>
-							<p>This simulation demonstrates the importance of maintaining sufficient user participation
-								in the risk management process. With participation below 40%, the risk of evaluation
-								errors becomes significant, reducing expected benefits. It is essential to engage users
-								to avoid compromising risk management strategies.</p>
+							<h2>The analysis combines descriptive, comparative, and cross-sectional methods, with:</h2>
+							<ul>
+								<li><strong> Triangulation </strong> between (1) the deployed IAM configuration, (2) the simulated action, (3) the system's actual response;</li>
+								<li>An evaluation framework inspired by the <strong> Zero Trust Architecture model </strong>, assessing least privilege, continuous verification, auditability, and denial of implicit trust.</li>
+							</ul>
+
+							<p>The objective is not to validate a full Zero Trust Architecture but to determine to what extent Azure’s IAM mechanisms align with its core principles in a controlled, vulnerable test environment.</p>
 						</div>
 
-						<!-- Right Column: Conclusion -->
+						<!-- Right Column: Required and Targeted Skills -->
 						<div class="column">
-							<h2>Conclusion</h2>
-							<p>In the absence of user participation, significant errors may occur, compromising the
-								effectiveness of risk management strategies. The Monte Carlo simulation showed that on
-								average, companies can expect reasonable benefits as long as user participation remains
-								above the critical threshold.</p>
+							<h2>Required and Targeted Skills</h2>
+							<p>This project requires to mobilize and develop:</p>
+							<ul>
+								<li>Technical expertise in <strong> cloud IAM </strong> (Entra ID, PIM, CA, MFA);</li>
+								<li>Operational knowledge of <strong>Azure Monitor, Log Analytics, Defender for Cloud</strong></li>
+								<li>The ability to structure <strong>reproducible scenarios</strong> and analyze dynamic IAM policies,</li>
+								<li>A deep understanding of <strong>regulatory frameworks</strong>, (NIST SP 800-207, ISO/IEC 27001).</li>
+								<li>A rigorous, evidence-based approach to <strong> experimental documentation and critical analysis</strong>.</li>
+							</ul>
+							
 						</div>
 					</div>
 

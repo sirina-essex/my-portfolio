@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Case Study: Threat Modeling for a Large International Bank</title>
+	<title>Manipulating Data, Bending Ethics: The Case of Whizzz Cereal</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -67,7 +67,7 @@
 
 		<!-- Header -->
 		<header id="header" class="alt style2">
-			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Practical Case</span></a>
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Collaborative Discussion</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -87,124 +87,76 @@
 		<div id="main" class="alt">
 
 			<!-- Case Study Section -->
+			<!-- Statistical Ethics Section -->
 			<section id="one">
-				<div class="inner">
-					<header class="major">
-						<h1>Case Study: Threat Modeling for a Large International Bank</h1>
+			<div class="inner">
+				<header class="major">
+				<h1>Statistical Ethics and Corporate Pressure: The Whizzz Cereal Case</h1>
+				</header>
 
-					</header>
-					<p>In this scenario, potential threats to a large international bank based in the UK are
-						analyzed using various threat modeling approaches, including STRIDE, DREAD, and Attack
-						Trees. Key resources include the Threat Modeling Manifesto, OWASP Threat Modeling Cookbook,
-						and the MITRE ATT&CK Framework.</p>
-					<!-- Step 1: Using the Cited Resources -->
-					<h2>1. Using of Resources</h2>
-					<div class="columns">
-						<div class="column">
-							<h3>Threat Modeling Manifesto</h3>
-							<p>The Threat Modeling Manifesto advocates for a collaborative and iterative approach to
-								managing threats. For a bank, it is crucial to work with security teams, compliance
-								experts, IT managers, and auditors to ensure that all layers of security—from payment
-								systems to online services—are covered.</p>
-						</div>
+				<!-- Context Blockquote -->
+				<blockquote>
+				<p>This discussion analyses a case involving Abi, a statistical analyst hired to evaluate the nutritional value of a new cereal product. Although the data suggests potential health risks, Abi considers favouring selective analyses to support the client’s marketing goals. The situation raises significant ethical questions regarding data manipulation, responsibility, and scientific neutrality.</p>
+				</blockquote>
 
-						<div class="column">
-							<h3>OWASP Threat Modeling Cookbook</h3>
-							<ul>
-								<li>Securing APIs to protect online banking services from injection attacks.</li>
-								<li>Protecting against credential theft through multi-factor authentication (MFA) and
-									password rotation policies.</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- MITRE ATT&CK Framework -->
-					<h3>MITRE ATT&CK Framework</h3>
-					<p>The MITRE ATT&CK Framework offers specific techniques attackers may use against a bank:</p>
+				<!-- Two Columns Layout -->
+				<div class="columns">
+				<!-- Left Column: Ethical Tensions -->
+				<div class="column">
+					<h2>Key Ethical Issues</h2>
 					<ul>
-						<li><strong>T1078 (Account Manipulation):</strong> Used to steal credentials and access
-							sensitive customer or employee accounts.</li>
-						<li><strong>T1210 (Exploitation of Internal Applications):</strong> Attacking the bank’s
-							internal systems, such as transaction management applications.</li>
-						<li><strong>T1485 (Data Destruction):</strong> Destroying or corrupting critical banking data,
-							such as account information or transactions.</li>
-					</ul>
-
-					<!-- Step 2: Applying the Threat Models -->
-					<h2>2. Applying the Threat Models</h2>
-
-					<!-- STRIDE Method -->
-					<h3>STRIDE Method</h3>
-					<ul>
-						<li><strong>Spoofing:</strong> Theft of customer or employee credentials to access internal
-							systems or accounts. <br><em>Mitigation:</em> Multi-factor authentication and behavioral
-							analysis for suspicious logins.</li>
-						<li><strong>Tampering:</strong> Modifying financial transactions to divert funds or falsify
-							records. <br><em>Mitigation:</em> Immutable logging systems and real-time monitoring.</li>
-						<li><strong>Repudiation:</strong> A user may deny having made a fraudulent or unauthorized
-							transaction. <br><em>Mitigation:</em> Digital signatures and cryptographic transaction
-							logging.</li>
-						<li><strong>Information Disclosure:</strong> Leakage of sensitive customer data.
-							<br><em>Mitigation:</em> Data encryption across all processes and communications.
-						</li>
-						<li><strong>Denial of Service (DoS):</strong> Overloading servers to disrupt online services.
-							<br><em>Mitigation:</em> Load balancing, redundancy, and DDoS protection.
-						</li>
-						<li><strong>Elevation of Privilege:</strong> Gaining administrative privileges to access
-							customer data. <br><em>Mitigation:</em> Role-based access control (RBAC) and regular audits.
-						</li>
-					</ul>
-
-					<!-- DREAD Method -->
-					<h3>DREAD Method</h3>
-					<p>The DREAD method is used to assess the risks associated with each threat identified in STRIDE:
-					</p>
-					<ul>
-						<li><strong>Damage Potential:</strong> A compromise of the financial transaction system could
-							result in massive losses and damage to customer trust. (Score: 9)</li>
-						<li><strong>Reproducibility:</strong> A successful attack could be repeated if the vulnerability
-							is not promptly addressed. (Score: 8)</li>
-						<li><strong>Exploitability:</strong> Phishing attacks or system vulnerabilities may allow
-							exploitation despite security measures. (Score: 6)</li>
-						<li><strong>Affected Users:</strong> Millions of customers and employees depend on these
-							systems, increasing the impact. (Score: 9)</li>
-						<li><strong>Detectability:</strong> Phishing attacks or account manipulation may go undetected
-							without user reports. (Score: 5)</li>
-					</ul>
-					<p>The total DREAD score helps prioritize which threats require immediate attention.</p>
-
-					<!-- Attack Tree -->
-					<h3>Attack Tree</h3>
-					<p>The Attack Tree models the detailed ways a threat can target the bank’s systems, focusing on
-						financial transaction systems and customer databases. This helps identify how an attack could
-						escalate through different components of the system.</p>
-					<span class="image main"><img src="images/attacktree.PNG" alt="" /></span>
-					<!-- Conclusion -->
-					<h2>Conclusion</h2>
-					<div class="box">
-						<p>This threat model for a large UK-based bank utilizes a combination of techniques from STRIDE,
-							DREAD, and Attack Trees, relying on resources such as the Threat Modeling Manifesto, OWASP
-							Threat Modeling Cookbook, and MITRE ATT&CK Framework. The identified threats, particularly
-							in transaction systems and customer data protection, require robust mitigation strategies.
-						</p>
-					</div>
-					<!-- Resources Section -->
-					<h2>Resources Used for this Model</h2>
-					<ul>
-						<li><strong>Shostack (2018):</strong> Used to understand and apply STRIDE, DREAD, and Attack
-							Trees methodologies. Provides theoretical and practical insights into these techniques.</li>
-						<li><strong>Spring et al. (2021):</strong> Critique of the CVSS system for contextual use cases,
-							highlighting the limitations of relying solely on quantitative scoring for critical
-							infrastructures such as a bank.</li>
-						<li><strong>Threat Modeling Manifesto:</strong> A guide for integrating a collaborative and
-							iterative approach in threat modeling.</li>
-						<li><strong>MITRE ATT&CK:</strong> A database for identifying specific cyberattack techniques
-							relevant to this type of infrastructure.</li>
-						<li><strong>OWASP Threat Modeling Cookbook:</strong> A practical collection of threat modeling
-							solutions tailored to different scenarios.</li>
+					<li><strong>Objectivity at Risk:</strong> Biased presentation of valid data undermines scientific integrity (Ravn & Sørensen, 2021).</li>
+					<li><strong>Cherry-Picking Practices:</strong> Selective reporting distorts the evidence base (Andrade, 2021).</li>
+					<li><strong>Duty to Warn:</strong> Ethical obligation to flag foreseeable misuse of findings (Rao et al., 2024).</li>
+					<li><strong>Accountability:</strong> Responsibility persists even without control over final publication (Schatman & Thoman, 2014).</li>
 					</ul>
 				</div>
+
+				<!-- Right Column: Legal and Societal Impact -->
+				<div class="column">
+					<h2>Broader Governance and Impact</h2>
+					<ul>
+					<li><strong>Ethics Beyond Borders:</strong> In the absence of national regulation, global ethical principles apply (National Academies, 2017).</li>
+					<li><strong>Helsinki Principles:</strong> Transparency and loyalty required in any research affecting public health (WMA, 2013).</li>
+					<li><strong>Mass Consumption Risks:</strong> Micro-risks become critical at scale (Hofseth, 2018).</li>
+					<li><strong>Food Safety Standards:</strong> Codex requires clear disclosure of risks in widely distributed food (FAO/WHO, 2023).</li>
+					</ul>
+				</div>
+				</div>
+
+				<!-- Ethical Reflection -->
+				<div class="box">
+				<h2>Ethical Reflection</h2>
+				<p>The Whizzz case reveals how scientific rigour can be compromised by industry expectations. Abi faces a dilemma: comply with client pressure or uphold ethical responsibility. This tension between neutrality and narrative illustrates the fragility of ethical practice in applied data science. Objectivity, transparency, and early warning are not optional—they are core duties of any researcher dealing with human-impacting products.</p>
+				</div>
+
+				<!-- Conclusion -->
+				<h2>Conclusion</h2>
+				<p>Ethical data practice must go beyond technical precision. Scientists like Abi are not mere technicians; they are ethically accountable for how their work shapes public decisions. Responsible conduct in statistics requires resisting selective reporting, acting on foreseeable misuse, and defending public trust in science—even without legal obligation to do so.</p>
+
+				<!-- References with Bullet Points -->
+				<h2>References</h2>
+				<ul class="references">
+				<li>Andrade, C. (2021). HARKing and cherry-picking in research. <a href="https://www.psychiatrist.com/jcp/harking-cherry-picking-p-hacking-fishing-expeditions-and-data-dredging-and-mining-as-questionable-research-practices/">Link</a></li>
+				<li>FAO/WHO (2023). Codex Alimentarius. <a href="https://www.fao.org/fao-who-codexalimentarius">Link</a></li>
+				<li>Hofseth, L.J. (2018). Getting rigorous with scientific rigor. <a href="https://academic.oup.com/carcin/article-pdf/39/1/21/24346864/bgx085.pdf">Link</a></li>
+				<li>National Academies of Sciences (2017). Fostering Integrity in Research. <a href="https://books.google.com/books?id=f8dEDwAAQBAJ">Link</a></li>
+				<li>Rao et al. (2024). Misconducts in research and integrity safeguards. <a href="https://journals.lww.com/indianjcancer/_layouts/15/oaks.journals/downloadpdf.aspx?an=02223310-202461020-00026">Link</a></li>
+				<li>Ravn, T. & Sørensen, M.P. (2021). Questionable research practices. <a href="https://link.springer.com/article/10.1007/s11948-021-00310-z">Link</a></li>
+				<li>Schatman, M.E. & Thoman, J.L. (2014). Ethical duties beyond control. <a href="https://link.springer.com/article/10.1007/s12207-014-9194-y">Link</a></li>
+				<li>WMA (2013). Declaration of Helsinki. <a href="https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/">Link</a></li>
+				</ul>
+
+				<div class="box">
+				<p><strong>Note:</strong> The above summary is based on my forum post for Collaborative Learning Discussion 2.</p>
+				<p>You can read the full post with structured argumentation and source citations below:</p>
+				<ul class="actions">
+					<li><a href="images/Collaborative discussion 2.pdf" class="button icon solid fa-file-alt">View Full Document: Initial Post</a></li>
+				</ul>
+				</div>
+			</div>
 			</section>
+
 		</div>
 
 	</div>

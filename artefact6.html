@@ -60,113 +60,96 @@
 		<!-- Main -->
 		<div id="main" class="alt">
 
-			<!-- Case Study Section -->
-			<section id="one">
-				<div class="inner">
-					<header class="major">
-						<h1>Prosecution of Private Investigators</h1>
-					</header>
+		<!-- Case Study Section -->
+		<section id="one">
+			<div class="inner">
+			<header class="major">
+				<h1>The Inappropriate Use of Surveys: The Cambridge Analytica Case and Compromise Governed by Digital Architecture</h1>
+			</header>
 
-					<!-- Background -->
-					<div>
-						<h2>Background</h2>
-						<p>M.C.K. Rentals Limited, a private investigation firm, was prosecuted in 2014 for illegally
-							accessing personal data held by public institutions, such as the Department of Social
-							Protection and the Primary Care Reimbursement Service of the Health Service Executive. These
-							data were then provided to credit unions to track down individuals who had defaulted on loan
-							repayments.</p>
-					</div>
+			<!-- Introduction Blockquote -->
+			<blockquote>
+				<p>
+				The Cambridge Analytica affair is not an isolated ethical lapse. It is a concrete demonstration of what happens when a digital system is designed without effective governance, without traceability of use, and without any post-collection data security. What the public perceived as a political scandal or a moral failing is, in reality, a structural compromise of the digital interaction model, where the fundamental principles of cybersecurity were ignored from the outset.
+				</p>
+			</blockquote>
 
-					<!-- GDPR Violations -->
-					<div class="box">
-						<h2>GDPR Violations</h2>
-						<p>The company violated the Data Protection Acts of 1988 and 2003, primarily by accessing
-							personal data without the data controller's authorization (Article 22) and disclosing this
-							information to third parties (Article 29).</p>
-					</div>
+			<!-- Context and Background -->
+			<div>
+				<h2>Background</h2>
+				<p>
+				In 2014, the Facebook app <em>This Is Your Digital Life</em> enabled a third-party company to harvest the personal data of over 50 million users through default permissions and an open API architecture. None of this data was encrypted, monitored, or even limited in duration or purpose. Hoffman (2022) characterises this mass extraction as an inherent drift of permissive digital architectures, emphasising that the deliberate absence of encryption and oversight constitutes, in itself, a flagrant breach of the security and minimisation requirements imposed by the GDPR (Articles 5 and 32). This was not a traditional attack but an operational hijacking enabled by the lack of technical governance.
+				</p>
+			</div>
 
-					<!-- Details of the Conviction -->
-					<div>
-						<h2>Details of the Conviction</h2>
-						<p>At the hearing on October 6, 2014, at Bray District Court, M.C.K. Rentals Limited pleaded
-							guilty to five of the twenty-three counts of accessing personal data without authorization.
-							The company was fined €1,500 per offense, totaling €7,500 for the five offenses. The two
-							directors, Margaret Stuart and Wendy Martin, were also fined €1,500 each for their
-							involvement in the violations.</p>
-					</div>
+			<!-- Threat Model -->
+			<div class="box">
+				<h2>A New Threat Model</h2>
+				<p>
+				The compromise unfolded in a coherent sequence: an enticing interface, permissive authorisation, unsupervised extraction, opaque algorithmic processing, and invisible behavioural targeting. Through this process, the data was transformed into psychometric profiles using the OCEAN model, enabling manipulation based on cognitive vulnerabilities (Kosinski, Stillwell and Graepel, 2013). This is no longer advertising—it is large-scale social engineering. Unlike classical cyberattacks, there is no malware, no intrusion, and no malicious code, yet the impact is identical: loss of confidentiality, integrity, and control. Here, the system targeted is the individual.
+				</p>
+			</div>
 
-					<!-- Implemented Measures and Why They Are Important -->
-					<h2>Implemented Measures and Why They Are Important</h2>
-					<div class="columns">
-						<div class="column">
-							<h3>1. Auditing Access to Personal Data</h3>
-							<p>The goal of auditing access is to ensure that personal data is only accessible to
-								authorized personnel and that any abnormal activity is detected and addressed.</p>
-							<blockquote>
-								<p><strong>How?</strong> Implement logging systems that record every attempt to access
-									data, including user details, time, and type of access. Tools like SIEM and ACLs can
-									monitor and control access to sensitive data.</p>
-							</blockquote>
-							<ul>
-								<li><strong>Monitoring Tools:</strong> SIEM systems for real-time monitoring of access.
-								</li>
-								<li><strong>ACL:</strong> Define access based on roles and permissions to minimize
-									unnecessary access.</li>
-							</ul>
-						</div>
-
-						<div class="column">
-							<h3>2. Training: Employee Awareness and Responsibility</h3>
-							<p>Training employees is essential to raise awareness of data protection risks and ensure
-								responsibility for data usage.</p>
-							<blockquote>
-								<p><strong>Why?</strong> Human errors often cause data breaches. Training helps
-									employees recognize risks like phishing or social engineering attacks.</p>
-							</blockquote>
-							<ul>
-								<li>Organize mandatory training sessions on handling personal data securely.</li>
-								<li>Test awareness through phishing simulations.</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="columns">
-						<div class="column">
-							<h3>3. Strict Data Sharing Policies with Third Parties</h3>
-							<p>Data sharing policies establish procedures for sharing personal data with third parties.
-								A Data Processing Agreement (DPA) should be signed to ensure GDPR compliance.</p>
-							<blockquote>
-								<p><strong>Example:</strong> Limit data access to necessary information, and require
-									authorization from a manager for every request.</p>
-							</blockquote>
-						</div>
-
-						<div class="column">
-							<h3>4. Enhanced Security Mechanisms</h3>
-							<p>Security mechanisms such as encryption, Multi-Factor Authentication (MFA), and Data Loss
-								Prevention (DLP) are essential to protect personal data from unauthorized access and
-								breaches.</p>
-							<ul>
-								<li><strong>Encryption:</strong> Encrypt personal data in storage and in transit.</li>
-								<li><strong>MFA:</strong> Add an extra layer of authentication for sensitive data
-									access.</li>
-								<li><strong>DLP:</strong> Monitor data transfers and block unauthorized copying.</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Conclusion -->
-					<div class="box">
-						<h2>Conclusion</h2>
-						<p>These measures help ensure GDPR compliance and protect personal data from misuse or breaches.
-							The M.C.K. Rentals Limited case illustrates how poor data management practices can result in
-							severe penalties. It is crucial for organizations to implement strong security measures and
-							policies to avoid similar outcomes.</p>
-					</div>
-
+			<!-- Consent and Legal Framework -->
+			<div class="columns">
+				<div class="column">
+				<h3>Constrained Consent</h3>
+				<p>
+					The GDPR relies on free and informed consent. In practice, this protection is undermined by constrained consent: users accept terms by necessity, without comprehension (Solove, 2021). European jurisprudence (CJEU, Planet49, 2019) confirms that such consent often becomes a legal fiction, preserving the asymmetry between users and platforms.
+				</p>
 				</div>
-			</section>
+				<div class="column">
+				<h3>Biometric Data in the FaceApp Case</h3>
+				<p>
+					The 2019 FaceApp affair replicated this model. The app transferred users’ biometric data to servers outside the EU without governance or auditability (O’Flaherty, 2019; Greenleaf, 2018), violating Article 9 of the GDPR. Once captured, such data becomes permanent and unerasable, usable for training facial recognition models.
+				</p>
+				</div>
+			</div>
+
+			<!-- Systemic Opacity -->
+			<div class="box">
+				<h2>Systemic Opacity and Architectural Responsibility</h2>
+				<p>
+				In both cases, the problem is architectural. Platforms are designed to extract, aggregate, and derive insights without transparency or traceability. Pasquale (2015) calls this systemic opacity, which undermines individuals’ right—enshrined in Article 22 of the GDPR—to understand and contest automated decisions. Users are embedded in systems they cannot interrogate.
+				</p>
+			</div>
+
+			<!-- Cybersecurity as Governance -->
+			<div>
+				<h2>Cybersecurity as a Governance Function</h2>
+				<p>
+				Cybersecurity can no longer be limited to protecting infrastructures. It must become a discipline of governance at the intersection of ethics, law, and structural responsibility. Henderson (2024) argues that professionals should ensure processing integrity, algorithmic accountability, and legitimacy. This role requires moving from passive gatekeeping to active architectural stewardship.
+				</p>
+			</div>
+
+			<!-- Conclusion -->
+			<div class="box">
+				<h2>Conclusion</h2>
+				<p>
+				Cambridge Analytica is not an anomaly—it is a consequence of surveillance capitalism (Zuboff, 2019). Regulation remains ineffective if underlying architectures persist. Reintroducing governance—technical, organisational, and ethical—is essential. The most dangerous vulnerabilities lie not in code, but in models. Only cybersecurity as governance can address them.
+				</p>
+			</div>
+
+			<!-- References -->
+			<h2>References</h2>
+			<ul class="references">
+				<li>Floridi, L. & Taddeo, M. (2016) 'What is data ethics?', <em>Philosophical Transactions of the Royal Society A</em>, 374(2083). <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2016.0360">https://royalsocietypublishing.org/doi/10.1098/rsta.2016.0360</a></li>
+				<li>Greenleaf, G. (2018) 'Global data privacy laws 2017.' <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2993035">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2993035</a></li>
+				<li>Henderson, M. (2024) <em>One World Under Surveillance</em>. London: Bloomsbury Academic.</li>
+				<li>Hoffman, J. S. (2022) <em>Your Data, Their Billions</em>. New York: Cambridge University Press.</li>
+				<li>Kosinski, M., Stillwell, D. & Graepel, T. (2013) 'Private traits and attributes are predictable...', <em>PNAS</em>, 110(15), pp.5802–5805. <a href="https://doi.org/10.1073/pnas.1218772110">https://doi.org/10.1073/pnas.1218772110</a></li>
+				<li>O’Flaherty, K. (2019) 'FBI FaceApp investigation confirms threat from apps developed in Russia', <em>Forbes</em>. <a href="https://www.forbes.com/sites/kateoflahertyuk/2019/12/03/fbi-faceapp-investigation-confirms-threat-from-apps-developed-in-russia/">Link</a></li>
+				<li>Pasquale, F. (2015) <em>The Black Box Society</em>. Cambridge, MA: Harvard University Press.</li>
+				<li>Regulation (EU) 2016/679 (GDPR), Articles 5,7,9,22,32. <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a></li>
+				<li>Solove, D.J. (2021) 'Privacy self-management and the consent dilemma', <em>Harvard Law Review</em>, 126(7), pp.1880–1903.</li>
+				<li>Zuboff, S. (2019) <em>The Age of Surveillance Capitalism</em>. New York: PublicAffairs.</li>
+				<li>CJEU, Planet49 Case (2019). <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62017CJ0673">Link</a></li>
+			</ul>
+
+			</div>
+		</section>
 		</div>
+
 
 	</div>
 

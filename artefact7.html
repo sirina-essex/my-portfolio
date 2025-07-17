@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Security Standards and Compliance</title>
+	<title>Summary Measures : Analytical Report</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,7 +39,7 @@
 
 		<!-- Header -->
 		<header id="header" class="alt style2">
-			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Activity</span></a>
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Worksheet</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -59,143 +59,73 @@
 
 		<!-- Main -->
 		<div id="main" class="alt">
-
-			<!-- Security Standards Section -->
 			<section id="one">
 				<div class="inner">
 					<header class="major">
-						<h1>Security Standards and Compliance</h1>
+						<h1>Summary Measures: Analytical Report</h1>
 					</header>
-					<p>Reviewing key security standards. Based on the organization discussed in the assessment, the task
-						is to determine which of these standards would apply.</p>
 
-					<!-- GDPR and PCI-DSS Columns -->
-					<div class="columns">
-						<!-- GDPR -->
-						<div class="column">
-							<h2>GDPR</h2>
-							<p><strong>Example:</strong> XXX Cloud Solutions, based in Germany, provides data storage
-								and processing services to European clients.</p>
-							<p><strong>Context:</strong> Handles sensitive data like personal addresses and health
-								information for various sectors including finance and healthcare.</p>
-							<p><strong>Compliance checks:</strong></p>
-							<ul>
-								<li>Ensure consent for data collection.</li>
-								<li>Audit user access to sensitive data.</li>
-							</ul>
-							<blockquote>
-								<p><strong>Recommendations:</strong></p>
-								<ul>
-									<li>Implement a user portal for data management.</li>
-									<li>Encrypt data at all stages.</li>
-								</ul>
-							</blockquote>
-						</div>
+					<!-- Exercise 6.1 -->
+					<h2>Exercise 6.1 – Mean, Standard Deviation and Sample Size (Diet B)</h2>
+					<table>
+						<thead>
+							<tr><th>Measure</th><th>Value</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>Sample Size</td><td>50</td></tr>
+							<tr><td>Mean (kg)</td><td>3.710</td></tr>
+							<tr><td>Standard Deviation (kg)</td><td>2.769</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Interpretation:</strong> The average weight loss is 3.710 kg, which is lower than that of Diet A (5.341 kg). The high standard deviation (2.769 kg) suggests a wide variability. Results vary significantly among individuals. This descriptive analysis does not support statistical inference.</p>
 
-						<!-- PCI-DSS -->
-						<div class="column">
-							<h2>PCI-DSS</h2>
-							<p><strong>Example:</strong> YYY E-commerce, based in Spain, processes online credit card
-								payments.</p>
-							<p><strong>Context:</strong> Handles thousands of transactions, collecting and storing
-								sensitive payment data like credit card numbers.</p>
-							<p><strong>Compliance checks:</strong></p>
-							<ul>
-								<li>Conduct vulnerability analyses on payment systems.</li>
-								<li>Audit transaction logs for suspicious activities.</li>
-							</ul>
-							<blockquote>
-								<p><strong>Recommendations:</strong></p>
-								<ul>
-									<li>Outsource payment processing to PCI-DSS compliant providers like Stripe.</li>
-									<li>Train employees on secure data practices.</li>
-								</ul>
-							</blockquote>
-						</div>
-					</div>
+					<!-- Exercise 6.2 -->
+					<h2>Exercise 6.2 – Median, Quartiles and Interquartile Range (Diet B)</h2>
+					<table>
+						<thead>
+							<tr><th>Measure</th><th>Value</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>Median</td><td>3.745 kg</td></tr>
+							<tr><td>Q1</td><td>1.950 kg</td></tr>
+							<tr><td>Q3</td><td>5.404 kg</td></tr>
+							<tr><td>IQR</td><td>3.451 kg</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Interpretation:</strong> Median and mean are similar, indicating a symmetrical distribution. However, a wide IQR shows uneven effectiveness. Again, these are descriptive statistics and should not be generalised without inferential testing.</p>
 
-					<!-- HIPAA and ISO 27001 Columns -->
-					<div class="columns">
-						<!-- HIPAA -->
-						<div class="column">
-							<h2>HIPAA</h2>
-							<p><strong>Example:</strong> ZZZ Health Services, a U.S.-based telemedicine provider.</p>
-							<p><strong>Context:</strong> Handles protected health information (PHI) such as diagnoses
-								and prescriptions through cloud storage.</p>
-							<p><strong>Compliance checks:</strong></p>
-							<ul>
-								<li>Audit storage systems to ensure PHI is encrypted.</li>
-								<li>Audit access control mechanisms regularly.</li>
-							</ul>
-							<blockquote>
-								<p><strong>Recommendations:</strong></p>
-								<ul>
-									<li>Implement role-based access controls (RBAC).</li>
-									<li>Regular security training for staff.</li>
-								</ul>
-							</blockquote>
-						</div>
+					<!-- Exercise 6.3 -->
+					<h2>Exercise 6.3 – Brand Preferences Across Two Demographic Zones</h2>
+					<h3>Observed Frequencies</h3>
+					<table>
+						<thead>
+							<tr><th>Brand</th><th>Zone 1 (count)</th><th>Zone 2 (count)</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>A</td><td>11</td><td>15</td></tr>
+							<tr><td>B</td><td>17</td><td>25</td></tr>
+							<tr><td>Other</td><td>42</td><td>30</td></tr>
+							<tr><td><strong>Total</strong></td><td><strong>70</strong></td><td><strong>70</strong></td></tr>
+						</tbody>
+					</table>
+					<h3>Percentages</h3>
+					<table>
+						<thead>
+							<tr><th>Brand</th><th>Zone 1 (%)</th><th>Zone 2 (%)</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>A</td><td>15.7</td><td>21.4</td></tr>
+							<tr><td>B</td><td>24.3</td><td>35.7</td></tr>
+							<tr><td>Other</td><td>60.0</td><td>42.9</td></tr>
+							<tr><td><strong>Total</strong></td><td><strong>100</strong></td><td><strong>100</strong></td></tr>
+						</tbody>
+					</table>
+					<p><strong>Interpretation:</strong> Zone 1 shows preference for other brands (60%). Zone 2 favours A and B (57.1%). Differences may relate to demographic and marketing factors. These findings are descriptive and require statistical testing (e.g., chi-square) for generalisation.</p>
 
-						<!-- ISO 27001 -->
-						<div class="column">
-							<h2>ISO 27001</h2>
-							<p><strong>Example:</strong> WWW Cloud Services, based in France, aims to implement an
-								Information Security Management System (ISMS).</p>
-							<p><strong>Context:</strong> Provides infrastructure services to clients handling sensitive
-								data.</p>
-							<p><strong>Compliance checks:</strong></p>
-							<ul>
-								<li>Conduct security policy audits, including access and incident management.</li>
-								<li>Perform penetration testing and vulnerability assessments.</li>
-							</ul>
-							<blockquote>
-								<p><strong>Recommendations:</strong></p>
-								<ul>
-									<li>Establish a risk management framework.</li>
-									<li>Train staff on incident response.</li>
-								</ul>
-							</blockquote>
-						</div>
-					</div>
-
-					<!-- NIST CSF -->
-					<div>
-						<h2>NIST CSF</h2>
-						<p><strong>Example:</strong> TTT Infrastructure, managing energy networks across several U.S.
-							states.</p>
-						<p><strong>Context:</strong> Protects critical infrastructure from cyberattacks that could
-							disrupt services.</p>
-						<p><strong>Compliance checks:</strong></p>
-						<ul>
-							<li>Regular vulnerability assessments and penetration tests.</li>
-							<li>Incident analysis to improve threat detection and response.</li>
-						</ul>
-						<blockquote>
-							<p><strong>Recommendations:</strong></p>
-							<ul>
-								<li>Implement intrusion detection systems (IDS).</li>
-								<li>Train teams for rapid incident response.</li>
-							</ul>
-						</blockquote>
-					</div>
-
-					<!-- Conclusion in Box -->
+					<!-- Final Note -->
 					<div class="box">
-						<h2>Conclusion and Recommendations</h2>
-						<p>Each company must tailor its security and risk management practices to the applicable
-							standards. By conducting audits, vulnerability tests, and regular staff training, companies
-							can ensure compliance with security standards and safeguard sensitive data.</p>
-						<ul>
-							<li>XXX Cloud Solutions should focus on GDPR compliance via encryption and access control.
-							</li>
-							<li>YYY E-commerce should prioritize PCI-DSS compliance by outsourcing payment processing.
-							</li>
-							<li>ZZZ Health Services should enhance HIPAA compliance through encryption and access
-								audits.</li>
-							<li>WWW Cloud Services should adopt ISO 27001 for improved security management processes.
-							</li>
-							<li>TTT Infrastructure should adhere to NIST CSF to protect critical infrastructure.</li>
-						</ul>
+						<h2>Conclusion</h2>
+						<p>All findings are based on descriptive statistics and should be interpreted cautiously. Further analysis involving inferential tests is recommended before generalising to a broader population.</p>
 					</div>
 
 				</div>

@@ -66,7 +66,7 @@
 					</header>
 
 					<!-- Exercise 6.1 -->
-					<h2>Exercise 6.1 – Mean, Standard Deviation and Sample Size (Diet B)</h2>
+					<h2>Mean, Standard Deviation and Sample Size (Diet B)</h2>
 					<table>
 						<thead>
 							<tr><th>Measure</th><th>Value</th></tr>
@@ -77,10 +77,18 @@
 							<tr><td>Standard Deviation (kg)</td><td>2.769</td></tr>
 						</tbody>
 					</table>
-					<p><strong>Interpretation:</strong> The average weight loss is 3.710 kg, which is lower than that of Diet A (5.341 kg). The high standard deviation (2.769 kg) suggests a wide variability. Results vary significantly among individuals. This descriptive analysis does not support statistical inference.</p>
+					<p><strong>Interpretation:</strong> Individuals who followed Diet B lost an average of 3.710 kg, indicating an overall positive weight loss in the sample. This average, while encouraging, remains significantly lower than that observed for Diet A (5.341 kg), suggesting that Diet B is comparatively less effective.</p>
+					<p>The standard deviation of 2.769 kg reveals considerable dispersion around the mean, meaning that individual outcomes varied widely. This suggests inconsistent effectiveness: some participants may have lost substantial weight, others very little, and some may even have gained weight.</p>
+					<p>By combining both indicators (mean and standard deviation), it can be concluded that Diet B does not produce a negative overall effect, but its average performance remains modest and highly variable between individuals.</p>
+					<p><strong>Methodology :</strong> This analysis relies solely on descriptive statistics. No inferential testing was conducted, meaning that the conclusions drawn are limited to the sample at hand. The mean, in particular, is highly sensitive to outliers; one or two extreme values could skew the result, limiting its usefulness without further context.</p>
+					<p>To assess whether the difference between Diets A and B is statistically significant, an inferential method such as an independent samples t-test would be required, as explored in Unit 7.2. Additionally, any attempt to generalise from this data must account for the risks of statistical error, particularly:</p>
+					<p>- A Type I error (false positive), where we infer a difference that does not exist in the population;</p>
+					<p>- A Type II error (false negative), where an actual difference is masked by variability.</p>
+					<p><strong>Conclusion :</strong> On the basis of the mean alone, Diet B can be seen as generally effective. However, compared to Diet A, it appears both less impactful and more erratic. These findings remain descriptive and should be interpreted with caution. They do not constitute evidence of a statistically significant difference without further testing.</p>
+
 
 					<!-- Exercise 6.2 -->
-					<h2>Exercise 6.2 – Median, Quartiles and Interquartile Range (Diet B)</h2>
+					<h2>Median, Quartiles and Interquartile Range (Diet B)</h2>
 					<table>
 						<thead>
 							<tr><th>Measure</th><th>Value</th></tr>
@@ -92,10 +100,14 @@
 							<tr><td>IQR</td><td>3.451 kg</td></tr>
 						</tbody>
 					</table>
-					<p><strong>Interpretation:</strong> Median and mean are similar, indicating a symmetrical distribution. However, a wide IQR shows uneven effectiveness. Again, these are descriptive statistics and should not be generalised without inferential testing.</p>
+					<p><strong>Interpretation:</strong> The median of 3.745 kg is very close to the previously observed mean (3.710 kg), indicating a relatively symmetrical distribution of weight loss in the sample for Diet B. This implies no major skewness (left or right) is distorting the distribution, unlike in some diets where a few extreme reactions can unbalance the results.</p>
+					<p>The first quartile (Q1) shows that 25% of participants lost less than 1.950 kg, while the third quartile (Q3) shows that 25% lost more than 5.404 kg. The interquartile range (IQR) of 3.451 kg reflects the spread of values within the middle 50% of the sample, indicating moderate to high variability in how effective the diet is for the average individual.</p>
+					<p><strong>Methodology</strong>Positional statistics such as the median and quartiles are less sensitive to outliers than the mean and are particularly useful when dealing with skewed data or extreme observations. However, like the measures in Exercise 6.1, they are descriptive in nature and do not provide insight into statistical significance.</p>
+					<p>The relatively large IQR, in proportion to the median, suggests that Diet B does not affect all individuals equally. This raises further questions about the role of individual variables (such as age, metabolism, or lifestyle) in determining the diet’s effectiveness.</p>
+					<p>It is also worth noting that, in comparison, Diet A showed both a higher median (5.642 kg) and a slightly lower IQR (3.285 kg), indicating not only a stronger effect but also more consistency across participants.</p>
 
 					<!-- Exercise 6.3 -->
-					<h2>Exercise 6.3 – Brand Preferences Across Two Demographic Zones</h2>
+					<h2>Brand Preferences Across Two Demographic Zones</h2>
 					<h3>Observed Frequencies</h3>
 					<table>
 						<thead>
@@ -120,12 +132,20 @@
 							<tr><td><strong>Total</strong></td><td><strong>100</strong></td><td><strong>100</strong></td></tr>
 						</tbody>
 					</table>
-					<p><strong>Interpretation:</strong> Zone 1 shows preference for other brands (60%). Zone 2 favours A and B (57.1%). Differences may relate to demographic and marketing factors. These findings are descriptive and require statistical testing (e.g., chi-square) for generalisation.</p>
-
-					<!-- Final Note -->
+					<p><strong>Interpretation:</strong> Brand preferences clearly differ between zones:</p>
+					<p>- Zone 1: A significant majority of respondents (42 out of 70, or 60%) prefer brands other than A or B. Brands A and B together only attract 40% of preferences, which may indicate a more fragmented market or weaker loyalty to leading brands.</p>
+					<p>- Zone 2: Brands A and B together account for 57.1% of preferences (21.4% for A, 35.7% for B), suggesting stronger consumer attachment to dominant brands.</p>
+					<p>Several factors may contribute to this contrast, including demographic profiles (age, income, education), differential marketing exposure, and the availability of brands in each zone. It is also plausible that consumers in Zone 1 prioritise price or local availability over brand identity.</p>
+					<p><strong>Methodology:</strong> This analysis is based on categorical data using frequency and percentage calculations. At this stage, no inferential statistics (such as a chi-square test) have been applied. While the differences appear meaningful, their statistical significance cannot be confirmed without further testing.</p>
+					<p>It is also important to note the lack of contextual information about the sampling strategy or potential error margins. This absence limits the generalisability of the results and calls for a cautious interpretation.</p>
+					<p>To determine whether brand preference is truly dependent on geographic zone, a chi-square test of independence would be appropriate. Such a test would provide a clearer picture of whether the observed patterns are statistically significant or likely due to chance.</p>
+					<p><strong>Conclusion:</strong> The data suggest clear distinctions in brand preferences between the two zones: Zone 1 favours alternative brands, while Zone 2 shows stronger loyalty to brands A and B. These trends could inform targeted marketing strategies. However, without the support of inferential testing, these findings must remain provisional and restricted to the current sample.</p>
 					<div class="box">
-						<h2>Conclusion</h2>
-						<p>All findings are based on descriptive statistics and should be interpreted cautiously. Further analysis involving inferential tests is recommended before generalising to a broader population.</p>
+						<p><strong>Note:</strong> The content above is a summarised version of the statistical activity.</p>
+						<p>The full worksheet is available below:</p>
+						<ul class="actions">
+							<li><a href="images/Summary Measures Worksheet.xlsx" class="button icon solid fa-file-alt">View worksheet Document: Measures</a></li>
+						</ul>
 					</div>
 
 				</div>

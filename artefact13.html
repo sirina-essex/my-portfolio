@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Assessment for Pampered Pets</title>
+	<title>Hypothesis Testing: Analytical Report</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -67,7 +67,7 @@
 
 		<!-- Header -->
 		<header id="header" class="alt style2">
-			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Team Assessment</span></a>
+			<a href="index.html" class="logo"><strong>IRINA Stephanie</strong> <span>Worksheet</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -85,153 +85,165 @@
 		</nav>
 		<!-- Main -->
 		<div id="main" class="alt">
-
-			<!-- Section 1: Background and Scope -->
 			<section id="one">
 				<div class="inner">
-					<header class="major">
-						<h1>Assessment for Pampered Pets</h1>
-						<p>Team 1: David Abiodun; Nelson Akaffou; Mark Collins; Ilyas Demirtas; Stephanie Irina</p>
-					</header>
+				<header class="major">
+					<h1>Hypothesis Testing: Statistical Significance and Inference in Paired and Independent Sample Comparisons</h1>
+				</header>
 
-					<h2>1. Background and Scope</h2>
-					<p>This team will assess Pampered Pets' business risks, focusing on current practices and future
-						growth. The evaluation will consider risks associated with online expansion, e-commerce
-						improvements, and potential scenarios for development:</p>
-					<ul>
-						<li>Do nothing</li>
-						<li>Mitigate existing risks without investing in e-commerce</li>
-						<li>Digitize business practices and invest in e-commerce</li>
-					</ul>
+				<!-- Exercise 7.1 -->
+				<h2>Product Sales Comparison Between Two Packaging Designs</h2>
+				<table>
+					<thead>
+					<tr><th>Measure</th><th>Value</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Mean - Design 1</td><td>172.6 units</td></tr>
+					<tr><td>Mean - Design 2</td><td>159.4 units</td></tr>
+					<tr><td>Difference</td><td>+13.2 units</td></tr>
+					<tr><td>t Statistic</td><td>2.875</td></tr>
+					<tr><td>Degrees of Freedom</td><td>9</td></tr>
+					<tr><td>Two-tailed p-value</td><td>0.0183</td></tr>
+					<tr><td>One-tailed p-value</td><td>0.0092</td></tr>
+					</tbody>
+				</table>
+				<p><strong>Interpretation:</strong> The average number of units sold was significantly higher for Design 1. The p-value (0.0183) is below the α = 0.05 threshold, allowing us to reject the null hypothesis. Design 1 appears more effective in increasing sales.</p>
+				<p><strong>Methodology:</strong> A paired samples t-test was used due to the matched design. The assumptions of independence and normality of differences were reasonably satisfied, and the test is robust for n = 10.</p>
+				<p><strong>Conclusion:</strong> There is statistical evidence supporting the superiority of Design 1 in this sample. However, the finding remains probabilistic and subject to Type I error risk.</p>
 
-					<!-- Section 2: Current Business Model -->
-					<h2>2. Current Business Model</h2>
-					<p>Pampered Pets uses partially digitized processes, such as stock tracking via networked computers,
-						but risks like unauthorized access, system failures, and manual handling errors remain.</p>
-					<span class="image"><img src="images/figure2.PNG" alt="" style="width:50%;" /></span>
-					<h3>Risk Assessment for Existing Processes
-					</h3>
-					<p>Key risks identified include network vulnerabilities, outdated systems, reliance on local
-						suppliers, and lack of a digital presence. These were assessed using the ISO31000 framework.
+				<!-- Exercise 7.2 -->
+				<h2>Average Weight Loss Comparison Between Diet A and Diet B</h2>
+				<table>
+					<thead>
+					<tr><th>Measure</th><th>Value</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Mean - Diet A</td><td>5.341 kg</td></tr>
+					<tr><td>Mean - Diet B</td><td>3.710 kg</td></tr>
+					<tr><td>Difference</td><td>+1.631 kg</td></tr>
+					<tr><td>t Statistic</td><td>3.072</td></tr>
+					<tr><td>Degrees of Freedom</td><td>98</td></tr>
+					<tr><td>p-value</td><td>0.00275</td></tr>
+					</tbody>
+				</table>
+				<p><strong>Interpretation:</strong> Diet A resulted in significantly greater average weight loss than Diet B. The p-value (0.00275) supports rejecting the null hypothesis of equal means.</p>
+				<p><strong>Methodology:</strong> An independent samples t-test was conducted after confirming equal variances using an F-test (p = 0.5399). Assumptions of independence and normality were met, and the test is robust for n = 50 per group.</p>
+				<p><strong>Conclusion:</strong> Diet A is statistically more effective in promoting weight loss within this sample. The result is highly significant but must be interpreted in light of possible Type I or II errors and experimental constraints.</p>
 
-					</p>
-					<table>
-						<thead>
-							<tr>
-								<th>Source</th>
-								<th>Threats</th>
-								<th>Risks</th>
-								<th>Impact</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Network Vulnerabilities</td>
-								<td>Unauthorized access, malware attacks, data breaches</td>
-								<td>Loss of sensitive customer data, operational disruptions</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Old Computer Use</td>
-								<td>System failures, outdated software vulnerabilities</td>
-								<td>Data loss, inefficient tracking of inventory</td>
-								<td>Medium</td>
-							</tr>
-							<tr>
-								<td>Dependency on Local Suppliers</td>
-								<td>Supply chain disruptions, supplier failures</td>
-								<td>Inability to meet customer demand, loss of reputation</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Manual Handling of Orders</td>
-								<td>Order errors, delayed processing</td>
-								<td>Customer dissatisfaction, loss of sales</td>
-								<td>Medium</td>
-							</tr>
-							<tr>
-								<td>Lack of Digital Presence</td>
-								<td>Inability to capture online sales, limited market reach</td>
-								<td>Stagnant growth, reduced competitiveness</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Data Backup and Recovery</td>
-								<td>Data loss due to hardware failure or cyber incidents</td>
-								<td>Loss of transaction records, financial disruptions</td>
-								<td>High</td>
-							</tr>
-							<tr>
-								<td>Physical Security of the Premises</td>
-								<td>Theft, vandalism</td>
-								<td>Loss of inventory, damage to property</td>
-								<td>Medium</td>
-							</tr>
-						</tbody>
-					</table>
+				<!-- Exercise 7.3 -->
+				<h2>Comparison of Impurity Levels Between Two Filtration Agents</h2>
+				<h3>Paired Sample t-Test Results</h3>
+				<table>
+					<thead>
+					<tr><th>Measure</th><th>Value</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Mean - Agent 1</td><td>8.25</td></tr>
+					<tr><td>Mean - Agent 2</td><td>8.68</td></tr>
+					<tr><td>Mean Difference</td><td>-0.43</td></tr>
+					<tr><td>t Statistic</td><td>-3.264</td></tr>
+					<tr><td>Degrees of Freedom</td><td>11</td></tr>
+					<tr><td>Two-tailed p-value</td><td>0.0075</td></tr>
+					</tbody>
+				</table>
 
-					<blockquote>
-						<p>Mitigations: Implement strong firewalls, antivirus software, and regular software updates.
-							Provide employee training on cybersecurity best practices and ensure regular data backups to
-							a secure cloud service.</p>
-					</blockquote>
+				<p><strong>Interpretation:</strong> The p-value (0.0075) is well below the conventional α = 0.05 threshold, and even below 0.01. We therefore reject the null hypothesis. The results indicate a statistically significant difference in mean impurity levels between the two agents. The negative mean difference and t statistic show that Agent 1 produces lower impurity levels, suggesting better filtration performance.</p>
 
-					<!-- Section 3: Proposed Business Model -->
-					<h2>3. Proposed Digitalization and E-Commerce Strategy
-					</h2>
-					<p>The benefits of digitizing the business and adopting an e-commerce platform are highlighted in
-						the proposed new model. However, the digital shift increases warehouse workload, requiring
-						further staff and IT support.</p>
-					<span class="image"><img src="images/figure3.PNG" alt="" style="width:50%;" /></span>
-					<h3>Risk Assessment for Digital Process</h3>
-					<blockquote>
-						<p>Mitigation approaches include using comprehensive cybersecurity measures such as firewalls,
-							antivirus software, phased digital transformation, employee engagement strategies, and
-							supplier vetting.</p>
-					</blockquote>
-					<!-- Section 3b: Risk Assessment for Digital Processes -->
-					<h2>Risk Assessment for Digital Processes
-					</h2>
-					<p>The risks associated with digitization were evaluated using a combination of STRIDE and OCTAVE
-						models.</p>
-					<span class="image main"><img src="images/figure4.PNG" alt="" style="width:70%;" /></span>
-					<h3>Risk Assessment for Digital Process</h3>
-					<blockquote>
-						<p>Mitigation approaches include using comprehensive cybersecurity measures such as firewalls,
-							antivirus software, phased digital transformation, employee engagement strategies, and
-							supplier vetting.</p>
-					</blockquote>
+				<p><strong>Methodology:</strong> A paired samples t-test was used, as each pair of values corresponds to the same batch filtered through two different agents. The assumptions for this test include: (1) independence of the 12 batches (confirmed by design), and (2) approximate normality of the differences. Although the sample size is small (n = 12), the test is robust against moderate deviations from normality provided no strong outliers are present. Normality was assumed reasonable for this exercise. A prior visual inspection (e.g., Q-Q plot or histogram) or Shapiro-Wilk test would strengthen this assumption.</p>
 
-					<!-- Section 3c: Phased Implementation -->
-					<h2>Phased Implementation
-					</h2>
-					<p>A phased implementation plan was proposed to minimize disruption during the transition, with
-						gradual investments in order management and infrastructure expansion.</p>
-					<h4>E-commerce phased implementation</h4>
-					<span class="image"><img src="images/figure5.PNG" alt="" style="width:70%;" /></span>
+				<p><strong>Conclusion:</strong> Agent 1 appears significantly more effective than Agent 2 in reducing impurity levels. The difference is statistically supported (p = 0.0075), with low risk of Type I error. However, due to the small sample size, generalisation beyond this sample must remain cautious. These findings are probabilistic and not definitive: the low p-value suggests strong evidence, not absolute certainty.</p>
 
-					<h4>New organizational structure</h4>
-					<span class="image"><img src="images/figure6.PNG" alt="" style="width:65%;" /></span>
-					<!-- Section 4: Project Outline -->
-					<h2>4. Project Outline</h2>
-					<p>A phased implementation of digital transformation is recommended, starting with backend systems
-						like inventory management, followed by customer-facing platforms. Additional staff will be
-						needed to handle increased warehouse operations and oversee digital risk management.</p>
+				<!-- Exercise 7.4 -->
+				<h2>One-Tailed Test: Is Agent 1 More Effective than Agent 2?</h2>
+				<h3>Paired Sample t-Test Results (One-Tailed)</h3>
+				<table>
+					<thead>
+					<tr><th>Measure</th><th>Value</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Mean - Agent 1</td><td>8.25</td></tr>
+					<tr><td>Mean - Agent 2</td><td>8.68</td></tr>
+					<tr><td>Mean Difference</td><td>-0.43</td></tr>
+					<tr><td>t Statistic</td><td>-3.264</td></tr>
+					<tr><td>Degrees of Freedom</td><td>11</td></tr>
+					<tr><td>One-tailed p-value</td><td>0.0038</td></tr>
+					</tbody>
+				</table>
+				<p><strong>Interpretation:</strong> The one-tailed p-value (0.0038) is well below the standard significance threshold of α = 0.05, allowing us to reject the null hypothesis in favour of the alternative. This supports the claim that Agent 1 is more effective than Agent 2, producing fewer residual impurities on average. The negative mean difference and t statistic confirm the expected direction of the effect.</p>
 
-					<!-- Conclusion -->
-					<h2>5. Conclusion</h2>
-					<div class="box">
-						<p>We recommend Pampered Pets invest in an e-commerce platform to capture at least 6.6% of the
-							market. Additionally, suppliers should be reviewed to find savings, ensuring quality control
-							to protect the brand’s reputation.</p>
+				<p><strong>Methodology:</strong> A one-tailed paired t-test was used, based on the experimental setup where each product batch was divided and filtered using both agents. The directional hypothesis (<em>Agent 1 &lt; Agent 2</em>) was specified <em>a priori</em>, which is essential to maintain statistical integrity and avoid confirmation bias.</p>
+
+				<p><strong>Conclusion:</strong> Agent 1 appears significantly more effective in reducing impurities, with strong statistical evidence (p = 0.0038) and low probability of a Type I error (less than 0.4%). Nonetheless, this conclusion is conditional on the assumptions being met:</p>
+				<ul>
+					<li><strong>Independence:</strong> Met by experimental design.</li>
+					<li><strong>Normality of differences:</strong> Assumed reasonable for n = 12; graphical checks are recommended for full validation.</li>
+				</ul>
+				<p>The t-test remains robust to moderate violations of normality, provided there are no strong outliers. These findings are probabilistic, not definitive: the p-value indicates strong support but not certainty.</p>
+				<p><strong>Ethical and Methodological Note:</strong> It is crucial that the one-tailed nature of the test was established before viewing the data. Choosing a one-tailed test after seeing a favourable result would invalidate the inferential process and artificially increase statistical significance.</p>
+
+				<!-- Exercise 7.5 -->
+				<h2>Comparison of Average Income Between Male and Female Superplus Diamond Cardholders</h2>
+				<h3>F-Test for Equality of Variances</h3>
+				<table>
+					<thead>
+					<tr><th>Measure</th><th>Value</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Male Variance</td><td>233.13</td></tr>
+					<tr><td>Female Variance</td><td>190.18</td></tr>
+					<tr><td>F Statistic</td><td>1.226</td></tr>
+					<tr><td>One-tailed p-value</td><td>0.218</td></tr>
+					</tbody>
+				</table>
+
+				<p><strong>Interpretation:</strong> The F-test p-value (0.218) is greater than the significance threshold of 0.05. We therefore fail to reject the null hypothesis of equal variances, and proceed with a t-test assuming equal variances.</p>
+
+				<h3>Independent Samples t-Test (One-Tailed, Equal Variances)</h3>
+				<table>
+					<thead>
+					<tr><th>Measure</th><th>Value</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Mean - Men</td><td>£52.913k</td></tr>
+					<tr><td>Mean - Women</td><td>£44.233k</td></tr>
+					<tr><td>Observed Difference</td><td>£8.680k</td></tr>
+					<tr><td>t Statistic</td><td>3.268</td></tr>
+					<tr><td>Degrees of Freedom</td><td>118</td></tr>
+					<tr><td>One-tailed p-value</td><td>0.00071</td></tr>
+					</tbody>
+				</table>
+
+				<p><strong>Interpretation:</strong> The one-tailed p-value of 0.00071 is well below the α = 0.05 threshold, allowing us to reject the null hypothesis. This indicates a statistically significant difference in favour of men, who earn on average £8.680k more than women in this sample.</p>
+
+				<p><strong>Methodology:</strong> The one-tailed independent samples t-test with equal variances was chosen based on an a priori research question: whether men earn more than women. The assumptions for the test are as follows:</p>
+				<ul>
+					<li><strong>Independence:</strong> Satisfied - two distinct groups.</li>
+					<li><strong>Normality:</strong> Assumed reasonable; n = 60 per group → test is robust.</li>
+					<li><strong>Equal variances:</strong> Confirmed by F-test (p = 0.218).</li>
+				</ul>
+
+				<p><strong>Conclusion:</strong> The analysis reveals a statistically significant income gap in favour of men among Superplus Diamond cardholders. The one-tailed p-value (0.00071) implies a Type I error risk below 0.1%, lending strong credibility to the finding. However, this conclusion is probabilistic, not absolute. It indicates that, on average, the difference is unlikely to have arisen by chance if there were no real income disparity.</p>
+
+				<p><strong>Warning on Generalisation:</strong> This conclusion:</p>
+				<ul>
+					<li>Should not be generalised to all customers or all card types.</li>
+					<li>Does not account for possible confounding variables (e.g. age, occupation, card tenure).</li>
+					<li>Relies on an a priori decision to use a one-tailed test, not adjusted post hoc based on observed outcomes.</li>
+				</ul>
+
+				<p>A one-tailed test chosen after seeing the data would violate inferential principles and artificially inflate significance.</p>
+
+				<div class="box">
+						<p><strong>Note:</strong> The content above is a summarised version of the statistical activity.</p>
+						<p>The full worksheet is available below:</p>
 						<ul class="actions">
-							<li><a href="images\group.pdf" class="button next">Get the full Report details</a></li>
+							<li><a href="images/Hypothesis Testing Using Excel.xlsx" class="button icon solid fa-file-alt">View worksheet Document: Measures</a></li>
 						</ul>
 					</div>
-
 				</div>
 			</section>
-		</div>
+			</div>
+
 	</div>
 
 	<!-- Scripts -->

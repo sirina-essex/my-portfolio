@@ -88,7 +88,8 @@
 			<section id="one">
 				<div class="inner">
 				<header class="major">
-					<h1>Hypothesis Testing: Statistical Significance and Inference in Paired and Independent Sample Comparisons</h1>
+					<h1>Hypothesis Testing: </h1>
+					<h2>Statistical Significance and Inference in Paired and Independent Sample Comparisons</h2>
 				</header>
 
 				<!-- Exercise 7.1 -->
@@ -112,23 +113,54 @@
 				<p><strong>Conclusion:</strong> There is statistical evidence supporting the superiority of Design 1 in this sample. However, the finding remains probabilistic and subject to Type I error risk.</p>
 
 				<!-- Exercise 7.2 -->
-				<h2>Average Weight Loss Comparison Between Diet A and Diet B</h2>
+				<h2>Comparison of Average Weight Loss Between Diet A and Diet B</h2>
+
+				<h3>Context and Objective</h3>
+				<p>This analysis compares the average weight loss between two groups of 50 independent participants, each following a different diet (Diet A and Diet B). Each participant was assigned to only one diet, making the samples independent. The goal is to assess whether one diet is statistically more effective than the other in promoting weight loss.</p>
+
+				<h3>Preliminary Step : F-Test for Equality of Variances</h3>
 				<table>
-					<thead>
-					<tr><th>Measure</th><th>Value</th></tr>
-					</thead>
-					<tbody>
-					<tr><td>Mean - Diet A</td><td>5.341 kg</td></tr>
-					<tr><td>Mean - Diet B</td><td>3.710 kg</td></tr>
-					<tr><td>Difference</td><td>+1.631 kg</td></tr>
-					<tr><td>t Statistic</td><td>3.072</td></tr>
-					<tr><td>Degrees of Freedom</td><td>98</td></tr>
-					<tr><td>p-value</td><td>0.00275</td></tr>
-					</tbody>
+				<thead>
+				<tr><th>Measure</th><th>Value</th></tr>
+				</thead>
+				<tbody>
+				<tr><td>Variance - Diet A</td><td>6.429</td></tr>
+				<tr><td>Variance - Diet B</td><td>7.668</td></tr>
+				<tr><td>F Statistic</td><td>0.839</td></tr>
+				<tr><td>p-value (two-tailed)</td><td>0.5399</td></tr>
+				</tbody>
 				</table>
-				<p><strong>Interpretation:</strong> Diet A resulted in significantly greater average weight loss than Diet B. The p-value (0.00275) supports rejecting the null hypothesis of equal means.</p>
-				<p><strong>Methodology:</strong> An independent samples t-test was conducted after confirming equal variances using an F-test (p = 0.5399). Assumptions of independence and normality were met, and the test is robust for n = 50 per group.</p>
-				<p><strong>Conclusion:</strong> Diet A is statistically more effective in promoting weight loss within this sample. The result is highly significant but must be interpreted in light of possible Type I or II errors and experimental constraints.</p>
+				<p><strong>Interpretation:</strong> Since the p-value from the F-test (0.5399) is greater than the significance threshold of 0.05, we fail to reject the null hypothesis of equal variances. It is therefore appropriate to proceed with an independent samples t-test assuming equal variances.</p>
+
+				<h3>t-Test for Independent Means</h3>
+				<table>
+				<thead>
+				<tr><th>Measure</th><th>Value</th></tr>
+				</thead>
+				<tbody>
+				<tr><td>Mean - Diet A</td><td>5.341 kg</td></tr>
+				<tr><td>Mean - Diet B</td><td>3.710 kg</td></tr>
+				<tr><td>Observed Difference</td><td>+1.631 kg</td></tr>
+				<tr><td>t Statistic</td><td>3.072</td></tr>
+				<tr><td>Degrees of Freedom</td><td>98</td></tr>
+				<tr><td>p-value (two-tailed)</td><td>0.00275</td></tr>
+				</tbody>
+				</table>
+
+				<h3>Interpretation</h3>
+				<p>The p-value of 0.00275 is well below the standard significance level of 0.05, leading to the rejection of the null hypothesis of equal means. The observed average weight loss is 1.631 kg higher for Diet A than Diet B, and this difference is statistically significant, suggesting that Diet A is more effective within the studied sample.</p>
+
+				<h3>Methodological Assumptions</h3>
+				<p>The independent t-test with equal variances relies on the following assumptions:</p>
+				<ul>
+				<li><strong>Independence:</strong> Each participant is part of only one group, with no overlap.</li>
+				<li><strong>Normality:</strong> The distribution of weight loss should be approximately normal within each group. Given n = 50 per group, the t-test is robust to moderate departures from normality.</li>
+				<li><strong>Equality of variances:</strong> Confirmed by the F-test (p = 0.5399).</li>
+				</ul>
+
+				<h3>Conclusion</h3>
+				<p>The statistical analysis demonstrates that Diet A results in significantly greater average weight loss than Diet B, with a mean difference of approximately 1.63 kg and a highly significant p-value of 0.00275. This suggests that the likelihood of observing such a difference due to chance is low if the diets were actually equivalent.</p>
+				<p>However, the result remains probabilistic: there is still a small Type I error risk (≈ 0.27%), meaning there is a slight chance the conclusion is incorrect. Conversely, in smaller or poorly powered samples, a Type II error could occur, failing to detect a real difference. Finally, while assumptions have been met, generalisation beyond the experimental context should be made cautiously, particularly considering possible confounding factors like physical activity, metabolism, or diet adherence.</p>
 
 				<!-- Exercise 7.3 -->
 				<h2>Comparison of Impurity Levels Between Two Filtration Agents</h2>
@@ -147,11 +179,11 @@
 					</tbody>
 				</table>
 
-				<p><strong>Interpretation:</strong> The p-value (0.0075) is well below the conventional α = 0.05 threshold, and even below 0.01. We therefore reject the null hypothesis. The results indicate a statistically significant difference in mean impurity levels between the two agents. The negative mean difference and t statistic show that Agent 1 produces lower impurity levels, suggesting better filtration performance.</p>
+				<p><strong>Interpretation:</strong> The p-value of 0.0075 is well below the conventional significance threshold of α = 0.05, leading to the rejection of the null hypothesis. This indicates a statistically significant difference between the two filtration agents. The negative sign of the mean difference (-0.43) and the t-statistic suggests that Agent 1 achieves a more effective reduction in impurities. These results point to superior performance by Agent 1 under the study conditions.</p>
 
-				<p><strong>Methodology:</strong> A paired samples t-test was used, as each pair of values corresponds to the same batch filtered through two different agents. The assumptions for this test include: (1) independence of the 12 batches (confirmed by design), and (2) approximate normality of the differences. Although the sample size is small (n = 12), the test is robust against moderate deviations from normality provided no strong outliers are present. Normality was assumed reasonable for this exercise. A prior visual inspection (e.g., Q-Q plot or histogram) or Shapiro-Wilk test would strengthen this assumption.</p>
-
-				<p><strong>Conclusion:</strong> Agent 1 appears significantly more effective than Agent 2 in reducing impurity levels. The difference is statistically supported (p = 0.0075), with low risk of Type I error. However, due to the small sample size, generalisation beyond this sample must remain cautious. These findings are probabilistic and not definitive: the low p-value suggests strong evidence, not absolute certainty.</p>
+				<p><strong>Methodology and Assumptions:</strong> A paired samples t-test was used, which is appropriate given the structure of the dataset. This test relies on two main assumptions: the independence of pairs—ensured by the experimental protocol, and the normality of the differences between pairs, specifically the distribution of differences in impurity levels between the two methods.</p>
+				<p><strong>Assumption Validation:</strong>The 12 pairs derive from distinct product batches, satisfying the independence criterion. The assumption of normality, though not formally tested here, may be assessed using a histogram or a Shapiro-Wilk test. Given the relatively small sample size (n = 12), caution is warranted; however, the t-test is considered robust to moderate deviations from normality, provided no extreme outliers are present.</p>
+				<p><strong>Conclusion:</strong> The analysis shows that Agent 1 significantly reduces impurities more than Agent 2, with a mean difference of 0.43 units and a p-value of 0.0075. This result is statistically strong and suggests a genuine advantage for Agent 1. However, as with all inferential conclusions, the outcome remains probabilistic: the type I error risk is below 1%, but not entirely eliminated. Given the limited sample size, contextual factors could still influence the findings.</p>
 
 				<!-- Exercise 7.4 -->
 				<h2>One-Tailed Test: Is Agent 1 More Effective than Agent 2?</h2>
@@ -169,17 +201,10 @@
 					<tr><td>One-tailed p-value</td><td>0.0038</td></tr>
 					</tbody>
 				</table>
-				<p><strong>Interpretation:</strong> The one-tailed p-value (0.0038) is well below the standard significance threshold of α = 0.05, allowing us to reject the null hypothesis in favour of the alternative. This supports the claim that Agent 1 is more effective than Agent 2, producing fewer residual impurities on average. The negative mean difference and t statistic confirm the expected direction of the effect.</p>
-
-				<p><strong>Methodology:</strong> A one-tailed paired t-test was used, based on the experimental setup where each product batch was divided and filtered using both agents. The directional hypothesis (<em>Agent 1 &lt; Agent 2</em>) was specified <em>a priori</em>, which is essential to maintain statistical integrity and avoid confirmation bias.</p>
-
-				<p><strong>Conclusion:</strong> Agent 1 appears significantly more effective in reducing impurities, with strong statistical evidence (p = 0.0038) and low probability of a Type I error (less than 0.4%). Nonetheless, this conclusion is conditional on the assumptions being met:</p>
-				<ul>
-					<li><strong>Independence:</strong> Met by experimental design.</li>
-					<li><strong>Normality of differences:</strong> Assumed reasonable for n = 12; graphical checks are recommended for full validation.</li>
-				</ul>
-				<p>The t-test remains robust to moderate violations of normality, provided there are no strong outliers. These findings are probabilistic, not definitive: the p-value indicates strong support but not certainty.</p>
-				<p><strong>Ethical and Methodological Note:</strong> It is crucial that the one-tailed nature of the test was established before viewing the data. Choosing a one-tailed test after seeing a favourable result would invalidate the inferential process and artificially increase statistical significance.</p>
+				<p><strong>Interpretation:</strong> The one-tailed p-value of 0.0038, well below the 0.05 threshold, leads to the rejection of the null hypothesis in favour of the alternative. This suggests that Filtration Agent 1 significantly reduces impurity levels more than Agent 2. The negative sign of both the t-statistic and the mean difference (-0.43) confirms this trend. The risk of a type I error—estimated here at 0.38%—remains low, though not entirely negligible.</p>
+				<p><strong>Assumptions and Test Validity:</strong>The test assumes independence of paired samples, which is ensured by the experimental design, and normality of the differences between observations. Although not formally tested here, the normality assumption is considered reasonable for 12 pairs in the absence of outliers. The paired t-test is generally robust in such conditions.</p>
+				<p><strong>Conclusion:</strong> This one-tailed test provides strong statistical evidence in favour of Agent 1's superior performance, with a significant mean difference and a p-value well below the α threshold. Nonetheless, this conclusion remains probabilistic: there is always a small residual risk of error. Rejecting the null hypothesis significantly reduces—but does not eliminate—this uncertainty.</p>
+				<p><strong>Ethical and Methodological Note:</strong> To preserve statistical integrity, the choice of a one-tailed test must be defined before any data analysis. Selecting it post hoc, based on observed trends, would invalidate the test and artificially inflate significance. In this case, the directional hypothesis was established a priori, ensuring the methodological rigour of the analysis.</p>
 
 				<!-- Exercise 7.5 -->
 				<h2>Comparison of Average Income Between Male and Female Superplus Diamond Cardholders</h2>
@@ -213,26 +238,11 @@
 					</tbody>
 				</table>
 
-				<p><strong>Interpretation:</strong> The one-tailed p-value of 0.00071 is well below the α = 0.05 threshold, allowing us to reject the null hypothesis. This indicates a statistically significant difference in favour of men, who earn on average £8.680k more than women in this sample.</p>
-
-				<p><strong>Methodology:</strong> The one-tailed independent samples t-test with equal variances was chosen based on an a priori research question: whether men earn more than women. The assumptions for the test are as follows:</p>
-				<ul>
-					<li><strong>Independence:</strong> Satisfied - two distinct groups.</li>
-					<li><strong>Normality:</strong> Assumed reasonable; n = 60 per group → test is robust.</li>
-					<li><strong>Equal variances:</strong> Confirmed by F-test (p = 0.218).</li>
-				</ul>
-
-				<p><strong>Conclusion:</strong> The analysis reveals a statistically significant income gap in favour of men among Superplus Diamond cardholders. The one-tailed p-value (0.00071) implies a Type I error risk below 0.1%, lending strong credibility to the finding. However, this conclusion is probabilistic, not absolute. It indicates that, on average, the difference is unlikely to have arisen by chance if there were no real income disparity.</p>
-
-				<p><strong>Warning on Generalisation:</strong> This conclusion:</p>
-				<ul>
-					<li>Should not be generalised to all customers or all card types.</li>
-					<li>Does not account for possible confounding variables (e.g. age, occupation, card tenure).</li>
-					<li>Relies on an a priori decision to use a one-tailed test, not adjusted post hoc based on observed outcomes.</li>
-				</ul>
-
-				<p>A one-tailed test chosen after seeing the data would violate inferential principles and artificially inflate significance.</p>
-
+				<p><strong>Interpretation:</strong>The one-tailed p-value obtained (0.00071) is well below the standard significance threshold of 0.05, allowing us to reject the null hypothesis. This indicates that, on average, men have significantly higher income than women within this sample. The observed mean difference is £8.680k. </p>
+				<p><strong>Assumptions and Test Validity:</strong>The validity of the applied t-test relies on three assumptions: independence between the two groups (men and women), assumed normality of income distributions (reasonable given the sample size, n = 60), and equality of variances, confirmed by a preliminary F-test. Under these conditions, the t-test is considered robust.</p>
+				<p><strong>Conclusion:</strong> The statistical analysis reveals a significant income difference in favour of men among Superplus Diamond cardholders. The risk of a type I error (wrongly concluding there is a difference) is below 0.1%, which strengthens the credibility of the result. However, this conclusion is probabilistic: it suggests a strong likelihood of a genuine difference in means, not an absolute certainty.</p>
+				<p><strong>Warning on Generalisation:</strong> These findings should not be generalised without caution. Factors such as age, occupation, or card tenure may also influence income but were not accounted for. Moreover, the one-tailed test was selected a priori, in line with good inferential practice. A post hoc choice would have undermined the validity of the statistical significance observed.</p>
+			
 				<div class="box">
 						<p><strong>Note:</strong> The content above is a summarised version of the statistical activity.</p>
 						<p>The full worksheet is available below:</p>
